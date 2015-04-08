@@ -1,0 +1,25 @@
+\subsection{Drawing GRB properties}
+\label{sec:drawnProp}
+This section describes how properties such as the luminosity and the redshift
+are drawn according to their distribution ($f1$) specified in section
+\ref{sec:GRB_models}. 
+
+The function determines the maximum $f_{max}$ and minimum $f_{min}$ of $f1$
+within a range in which a parameter $p$ is to be drawn. The range is specified
+by the user. 
+
+In the next step it randomly throws a value $p1$ for $p$ within the specified
+range and a random value $f_{random}$ between $f_{min}$ and $f_{max}$. Is
+$f_{random} <= f(p1)$ fullfilled, then p1 is returned as a value for $p$
+according to the distribution $f1$. Otherwise the step is repeated until the
+condition is met.
+
+The following parameters are drawn:
+
+\begin{itemize}
+ \item Peak luminosity $L_\text{Peak}$
+ \item Redshift $z$
+ \item Zenith angle $\theta$ (uniform in cos($\theta$))
+ \item Azimuth angle $\phi$ (uniform)
+ \item $t_{90, S}$
+\end{itemize}

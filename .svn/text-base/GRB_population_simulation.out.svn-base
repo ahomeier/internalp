@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{GRB models}{}
+\BOOKMARK [2][-]{subsection.2.1}{Wanderman Piran}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Howell Coward}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Long low luminosity GRBs}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Supernovae}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{T90}{section.2}
+\BOOKMARK [1][-]{section.3}{Optical- and X-Ray Follow Up}{}
+\BOOKMARK [1][-]{section.4}{GRB Toy Monte Carlo}{}
+\BOOKMARK [2][-]{subsection.4.1}{GRB Spectra}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Drawing GRB properties}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Number of expected Neutrinos based on NuGen Datasets}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Zenith Bands}{subsection.4.3}
+\BOOKMARK [2][-]{subsection.4.4}{Shift Event Position to GRB position}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Total Emitted Energy as Source , total}{subsection.4.4}
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Fluence at Source}{subsection.4.4}
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Fluence at Earth}{subsection.4.4}
+\BOOKMARK [3][-]{subsubsection.4.4.4}{Number of Expected Neutrinos Within IceCube}{subsection.4.4}
+\BOOKMARK [2][-]{subsection.4.5}{Normalization to HESE Flux}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.5.1}{* - Monte Carlo Based}{subsection.4.5}
+\BOOKMARK [3][-]{subsubsection.4.5.2}{* - Semi-Analytic Approach}{subsection.4.5}
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Influence of min}{subsection.4.5}
+\BOOKMARK [2][-]{subsection.4.6}{Detection Probabilities}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Doublet Probabilities}{subsection.4.6}
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Probability to Detect a GRB}{subsection.4.6}
+\BOOKMARK [1][-]{section.5}{Results}{}
+\BOOKMARK [1][-]{section.6}{Discussion}{}

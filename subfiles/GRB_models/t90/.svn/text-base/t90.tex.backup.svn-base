@@ -1,0 +1,27 @@
+\subsection{T90}
+Ninety percent of the detectable $\gamma$-ray flux is received between a
+time intervall called $t_{90}$. Reference (???) lists values for most GRBs.
+They are displayed in figure \ref{fig:t90earth}. 
+
+In the GRB Toy Monte Carlo $t_{90}$ values will be drawn at source ($S$) to
+calculate the total energy output. It will be folded with the drawn redshift to
+calculate the $t_{90}$ pervieved at earth ($E$).
+\begin{equation}
+ t_{90, E} = t_{90, S} \cdot \left( 1 + z \right)
+\end{equation}
+
+
+what is t90
+from GRB table (source?)
+fold with redshift
+result function in table
+what about HC?
+\begin{figure}[ht]
+\centering
+ \captionsetup{width=.68\textwidth}
+{\includegraphics[width=0.68\textwidth]{fig/t90earth.pdf}}
+    \caption{The $t_{90}$ distributions at earth based on data extracted from
+the Swift database (reference ???) and the drawn distributions based on
+$t_{90}$ values drawn at source and folded with the redshift distributions.}
+\label{fig:t90earth}
+\end{figure}

@@ -1,0 +1,132 @@
+\section{Optical- and X-Ray Follow Up}
+\label{sec:OFU}
+The analysis is based on data from the X-Ray Follow Up including the seasons 
+IC86-1 to IC86-3. It is a system that analyzes data at the South Pole, 
+searching for multiple neutrinos within 100 seconds from one direction (and a 
+possible source 
+location) to trigger Follow-Up observations with various telescopes including 
+the XRT on board the Swift satellite. The latency of such triggers is about 
+three minutes on average. The X-ray Follow-Up (XFU) is a subsystem of the 
+Optical Follow-Up (OFU).
+\subsection{Alert system}
+
+Triggered events are reconstructed at Pole and evaluated at various levels. 
+They are first roughly classified as possible muons by the Muon Filter 
+($\sim$40 Hz). Stricter cuts are applied on the OnlineL2Filter, to filter 
+out badly reconstructed events achieving a rate of about 5 Hz. The lower rate 
+allows for further more detailed reconstructions which are then used for the 
+OFU filter. 
+
+The OFU filter is applied to select well reconstructed muon neutrino events 
+from the northern sky. Depending on the season a purity of up to 90\% was 
+achieved. The filter was improved season to season though the OFU seasons do 
+not match the IceCube seasons. In the first year with the full detector 
+configuration (IC86-1), the OFU system was shut down for several month as the 
+OFU filter didn't work as expected. The debugging took a long time due to 
+multiple software changes that were introduced for IC86-1. For the third OFU 
+season in this analysis a boosted decision tree (BDT) was introduced during the 
+second full IceCube season (IC86-2). As no changes were introduced for IC86-3, 
+the BDT season encompasses the end of IC86-2 and the full IC86-3 IceCube 
+season. The first and last runs of all seasons are listed in Table 
+\ref{tab:ofu_seasons}.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l||c|c|c}
+   Season & IC86-1 & IC86-2 & IC86-BDT \\
+\hline
+   first run & 118691  & 120156  & 121788  \\
+   start date & 2011-09-16 & 2012-05-15 & 2013-02-01\\
+\hline
+   last run  & 120155 & 121787 & 124701 \\
+   end date & 2012-05-15  & 2013-02-01 & 2014-05-06 \\
+  \end{tabular}
+  \caption{The table lists the different seasons that were analyzed for this 
+work.}
+  \label{tab:ofu_seasons}
+\end{table}
+
+The OFU cut selection for the IC86-1 and IC86-2 seasons are based on the 
+following logic
+\begin{equation}
+\begin{align}
+Zenith (MPE) \geq 90^\circ \; \; and \; \; \frac{logl (MuonLLh)}{NCh - 3.5} & 
+<= 8 \; \; and \\ \text{min} (Zenith_{Split}) &\geq 69.51^\circ \; 
+\; and \\
+((NDir (MPE) \geq 6 \; \;
+and LDir (MPE) \geq 280 )& \; \;or \; \;(MuE (MPE) \geq 1e6))
+\end{align}
+\end{equation}
+
+The $Zenith_{Split}$ values refer to the 
+zenith values derived from the topological and time splitter of the events. MPE 
+and MuonLLh refer to the different fit types used to extract the parameters. 
+The cut scheme was completely reworked  for IC86-BDT to use a BDT cut 
+(reference ???). 
+
+The single neutrino events passing these cuts are further analyzed to search 
+for multiplets with multiplets consisting of at least two events arriving 
+within the time frame $\Delta t$ and an angular difference $\Delta \Psi$:
+\begin{equation}
+ \Delta T \leq 100 \text{ s} \;\;\; and \;\;\; \Delta \Psi \leq 3.5^\circ
+\end{equation}
+
+All seasons have in common that roughly 50 - 60  doublets per 
+year are expected to be generated purely from the background of atmospheric 
+neutrinos while the background of higher multiplets (triplets, quadruplets) is 
+negligible in the order of once every 15 to 20 years. As observation time with 
+the Swift satellite is precious, it was agreed to send only the seven most 
+signal like doublets per year. The evaluation is based on the OFU test 
+statistic (OFUtst)
+\begin{align}
+    \begin{split}
+    \lambda = -2 \ln \mathcal{L} &= \frac{\Delta\Psi^2}{\sigma_q^2} + 2 \ln(2
+\pi \sigma_q^2) \\
+                              &- 2 \ln\left( 1 -
+e^{\frac{-\theta_A^2}{2\sigma_w^2}}\right) 
+                              + 2 \ln\left( \frac{\Delta T}{\unit[100]{s}}
+\right)
+    \end{split}
+  \label{eq:alert-llh}
+\end{align}
+in which the time between the neutrinos in the multiplet is denoted as $\Delta 
+T$
+and their angular separation as $\Delta\Psi$. $\sigma_q^2 = \sigma_1^2 +
+\sigma_2^2$ and $\sigma_w^2 = \left(1/\sigma_1^2 + 1/\sigma_2^2\right)^{-1}$
+ are the combined uncertainties of the directional
+reconstruction errors $\sigma_1$ and $\sigma_2$ of the two neutrino events.
+$\theta_A$ corresponds to the (circularized) angular radius of the field
+of view (FoV) of the follow-up telescope (set to $0.5^\circ$ for Swift). A cut 
+value $\lambda_\text{cut}$ was chosen each season to filter out the best nine 
+alerts (Table \ref{tab:llh cut values}). Statistically, two more alerts will be 
+lost because Swift can't observe about 80\% of the sky due to the moon and the 
+sun.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l|c|c|c}
+   Season & IC86-1 & IC86-2 & IC86-BDT \\
+\hline
+   cut value & -8.8  & -8.8 & -9.41 \\
+  \end{tabular}
+  \caption{The cut values on the likelihood to filter down the number of
+background doublets to less or equal than 9.}
+  \label{tab:llh cut values}
+\end{table}
+The full derivation of the test statistic can be found in the proposal to the 
+IceCube collaboration (reference ???).
+
+
+\subsection{Monitoring}
+The alert system described in the previous section delivers alerts only if it 
+is operational. To monitor the system an additional kind of alerts were 
+introduced.
+Test 
+alerts are multiplets formed by neutrino events with a time 
+difference of less than 100 seconds and an angular difference of $3.5 < \Delta 
+\Psi \leq 7.5^\circ$. The events going into the multiplet decision have been 
+selected by applying softer cuts on the Online Level 2 events, i.e. they are 
+more background contaminated than the OFU events. The less stringent cuts and 
+the different condition for the angular difference yield the desired test alert 
+rate of about one alert every ten minutes and prevent test alerts to be alerts 
+as well.

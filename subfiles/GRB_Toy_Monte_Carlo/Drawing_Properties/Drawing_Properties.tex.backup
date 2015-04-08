@@ -1,0 +1,11 @@
+\subsection{Drawing GRB properties}
+This section describes how properties such as the luminosity and the redshift
+are drawn according to their distribution specified in section
+\ref{sec:GRB_models}. The 
+
+range 
+determine max and min
+draws properties randomly in range
+draws randomly in y range
+calculate y at property
+if random y smaller than y calc -> return property otherwise repeat.

@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage{import}
+\usepackage{subfig} 
+\usepackage{amsmath}
+% \usepackage{subfiles}
+
+\usepackage{units}
+\usepackage{wrapfig}
+% \usepackage{booktabs}
+\usepackage[parfill]{parskip}
+\RequirePackage{mathptmx}
+% \RequirePackage{ftnright}
+\RequirePackage{fancyhdr}
+%\RequirePackage{graphicx}
+\usepackage[pdftex]{graphicx}
+% \usepackage{sidecap}
+\RequirePackage{hyperref}
+% \usepackage{hyperref}
+\usepackage[margin=1.5cm]{geometry}
+% \usepackage[margin=2.5cm]{geometry}
+\usepackage{caption}
+\usepackage{framed}
+\usepackage[sort,round]{natbib}
+\usepackage{rotating}
+\usepackage{tabularx}
+\setcounter{secnumdepth}{5}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\numberwithin{equation}{section}
+% \usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage[margin=0pt]{subfig}
+ % the subfigure package became obsolete, now use subfig with 
+% \subfloat[caption]{\includegraphics...} 
+\usepackage[margin=0pt]{caption}
+% \captionsetup[figure]{width=.85\textwidth}
+% \captionsetup[subfigure]{margin=0pt}
+% \captionsetup[subfloat]{margin=0pt}
+% \usepackage{subcaption}
+% \usepackage[margin=0pt]{subfig}
+% \includeonly{}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\include{subfiles/Introduction/Introduction}
+\include{subfiles/OFU/OFU}
+\include{subfiles/scrambling/scrambling}
+\include{subfiles/GRB_models/GRB_models}
+\include{subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo}
+% \include{subfiles/Results/Results}
+% \include{subfiles/Discussion/Discussion}
+
+% \section{}
+
+\end{document}

@@ -1,0 +1,47 @@
+\section{GRB models}
+\label{sec:GRB_models}
+Most GRB analyises within IceCube use information from observed GRBs to look
+for neutrino clusters in time and space correlation with the detected GRBs.
+This strategy has the obvious advantague of reducing the neutrino background to
+achieve higher significance per GRB observation. However, due to the limited
+Field of View of the satelites there will be many GRBs that stay undetected.
+Furthermore, one is biased by the detection sensitivity of the satelites.
+
+In this analysis, a GRB population is assumed based on theoretical work and
+extrapolation based on data from Swift and other satelites. The redshift and
+luminosity functions are extracted.
+The neutrino luminosity function is assumed to have the same shape and is
+shifted in energy by an efficiency factor $\epsilon$ (see section ???).
+%  to calculate their
+% expected signal in IceCube.
+The different population models under consideration are discussed in this
+chapter.
+
+The main analysis has been done based on the luminosity function and GRB rate
+density calculated by Wanderman and Piran (\ref{ssec:WP}). 
+The other models presented here were considered to examine the dependency on
+the assumed model.
+
+\input{subfiles/GRB_models/WandermanPiran/WandermanPiran}
+\input{subfiles/GRB_models/HowellC/HowellC}
+\subsection{Long low luminosity GRBs}
+In recent years, IceCube has started to rule out the first optimistic GRB
+neutrino emission models leading to new ideas as to possible neutrino emitters.
+It has been proposed (reference ???) that a high number of very low
+luminosity GRBs exists that are difficult to detect in $\gamma$-rays but could
+produce most of the neutrinos expected from GRBs. In principle, the follow-up
+analysis based on IceCube triggers can be an approach to examine these objects.
+Thus they are discussed here briefly for completeness sake.
+
+Unfortunately, these low luminosity GRBs are predicted to have a prompt
+emission phase in the range of $10^3$ s. The follow-up program surpresses
+background by allowing a maximal time difference of 100s between two events
+reducing the sensitivity to very long GRBs at the same time. Therefore, they
+have not been examined yet within this analysis.
+
+\subsection{Supernovae}
+%Nora s work
+To be added
+
+\input{subfiles/GRB_models/t90/t90}
+% \input{subfiles/GRB_models/comparison/comparison}

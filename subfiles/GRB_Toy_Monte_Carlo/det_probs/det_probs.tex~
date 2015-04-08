@@ -1,0 +1,242 @@
+\subsection{Detection Probabilities}
+At this stage, the drawing of GRB properties according to specified functions
+and the subsequent derivation and calculation of the signal expectation in
+IceCube has been explained. However, the Optical (and X-ray) Follow-Up does not
+trigger on singlets but on multiplets fulfilling several criteria.
+
+Multiplets are a number of neutrinos that arrive within 100 s and 3.5 degrees
+of each other (chapter ???). A test statistic was implemented to select the
+most signal like doublets (chapter ???) to trigger Swift. Once triggered there
+is a chance that a source will not be within the FoV of the XRT. 
+
+\subsubsection{Doublet Probabilities}
+\paragraph{P$_{\Delta t}$}$\;$\\
+% \\
+%  \Rightarrow \tau &= \frac{-t_{90}}{\text{ln}(0.1)}
+P$_{\Delta t}$ is the probability that two neutrinos arrive within
+100 seconds, the time window
+specified in the doublet search. 
+It falls exponentially with time if the lightcurve is assumed to be fast rising
+with an exponential decay (FRED)
+\begin{equation}
+ P(\Delta t) = 1 - e^{\left(-\frac{\Delta t}{\tau} \right)}
+\end{equation}
+in which $\tau$ can be determined according to equation \ref{eq:ToyMC_tau} given
+the $t_{90}$ drawn according to \ref{eq:t90dist} and converted in agreement
+with \ref{eq:t90earth}. For the Optical Follow-Up
+$\Delta t_{max} =100 \text{ s}$ is currently set. 
+
+The effects of different time
+windows could be examined by choosing different values. However, this is not
+the focus of this work.
+
+
+
+\paragraph{P$_{3.5^\circ}$}$\;$\\
+The second requirement for each neutrino pair is that they arrive with a
+maximum angular separation of 3.5 degrees. To calculate the probability 
+P$_{3.5^\circ}$ of this happening for a given GRB, nugen events need to be
+selected from within the zenith band (chapter \ref{sec:zenith_bands}) and
+shifted to the GRB direction (chapter \ref{sec:shift2source}). Each remaining
+event is paired with all other events, and the angular differences of the
+shifted reconstructed directions are determined. The probability is then the
+ratio between the sum of the weight products (eq. \ref{eqn:Nexp_wZB_wEps}) of
+all event pairs passing the $3.5^\circ$ cut and all pairs
+\begin{equation}
+ P_{3.5^\circ} = \frac{\sum_{i} \sum_{j=i+1} w_i \cdot w_j | \Delta \Psi(i, j)
+\leq
+3.5^{\circ}}{\sum_i \sum_{j=i+1} w_i \cdot w_j}
+\end{equation}
+This procedure takes a lot of computational power. However it is the
+same for all GRBs coming from the exact same zenith angle as the same nugen
+events will be considered. 
+
+
+Therefore, about ten thousand GRBs are drawn for each OFU cut setting and HESE
+spectra, the probability calculated and the result is used to parametrize the
+probability as a function of the GRB's zenith angle
+$P_{3.5^\circ}(\theta_\text{GRB})$. The parameterization is then used to
+simulate GRBs in greater numbers.
+\begin{figure}[h]
+ \begin{minipage}{0.5\textwidth}
+ \captionsetup{width=.9\textwidth}
+  \includegraphics[width=\textwidth]{fig/P3p5param.pdf}
+\caption{The probability of neutrino events to be within 3.5 \% of each other
+and the dependency on the cosinus of the GRB zenith angle. The blue line
+represents the parameterization.}
+ \end{minipage}
+ \begin{minipage}{0.5\textwidth}
+ \captionsetup{width=.9\textwidth}
+  \includegraphics[width=\textwidth]{fig/P3p5param_quality.pdf}
+\caption{Using a second dataset, a histogram of the ratio between the calculated
+and parametrized values is shown. The maximum deviation is of about 2.5\%.}
+ \end{minipage}
+\end{figure}
+
+%explain figure ???
+%is delta t really drawn within 0, 100 s? or is max t90? and what is correct?
+
+\paragraph{P$_\text{Doublet}$}$\;$\\
+The probability that two neutrinos form a doublet that triggers OFU is then
+\begin{equation}
+ P_\text{Doublet} = P_{\Delta t} \cdot P_{3.5^\circ}
+\end{equation}
+
+
+
+\paragraph{P$_{\text{llh}}$}$\;$\\
+On average the doublet selection based on time and direction leads to about 50 -
+60
+doublets per year (depending on season) while only nine alerts can be sent to
+the Swift telescope. The
+selection of the most signal like doublets is based on the test statistic
+(chapter ???)
+\begin{align}
+    \begin{split}
+    \lambda = -2 \ln \mathcal{L} &= \frac{\Delta\Psi^2}{\sigma_q^2} + 2 \ln(2
+\pi \sigma_q^2) \\
+                              &- 2 \ln\left( 1 -
+e^{\frac{-\theta_A^2}{2\sigma_w^2}}\right) 
+                              + 2 \ln\left( \frac{\Delta T}{\unit[100]{s}}
+\right)
+    \end{split}
+  \label{eq:alert-llh}
+\end{align}
+where the time between the neutrinos in the multiplet is denoted as $\Delta T$
+and their angular separation as $\Delta\Psi$. $\sigma_q^2 = \sigma_1^2 +
+\sigma_2^2$ and $\sigma_w^2 = \left(1/\sigma_1^2 + 1/\sigma_2^2\right)^{-1}$
+with $\sigma_1$ and $\sigma_2$ are the uncertainties on the directional
+reconstruction of the two neutrino events.
+$\theta_A$ corresponds to the (circularized) angular radius of the field
+of view (FoV) of the follow-up telescope (set to $0.5^\circ$ for Swift). This
+test statistic is calculated for all event pairs that pass the condition of
+being reconstructed within $3.5^\circ$. The time difference is randomly drawn
+with $\Delta T \in [0, 100]$ s and weighted according to an exponential decay
+(Eq. \ref{eq:lum_vs_time}) introducing a dependency on $t_{90}$
+(Eq. \ref{eq:ToyMC_tau}).
+% \begin{table}[h]
+%   \centering
+%   \begin{tabular}{l||c|c|c|c|c|c|c|c|c}
+%    \textless NBG & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+%    \hline
+%    llh cut value & -14.11 & -12.73 & -11.9 & -11.34 & -10.79 & -10.52 & -10.24 &
+% -9.69 & -9.41 \\
+%   \end{tabular}
+%   \caption{The cut values on the likelihood to filter down the number of
+% background doublets to less or equal then NBG.}
+%   \label{tab:llh cut values}
+% \end{table}
+
+
+The Toy Monte Carlo requires a cut value $\lambda_\text{cut}$ on the
+test statistic as input.
+% (table \ref{tab:llh cut values}) 
+The probability that
+a GRB doublet will pass the cut is determined by taking the ratio of the sum of
+weight
+products from events passing the cut and the sum of all doublets passed to this
+function.
+\begin{equation}
+ P_\text{llh} = \frac{\sum_{i} \sum_{j=i+1} w_i \cdot w_j \; | \; \lambda(i, j)
+\leq \lambda_\text{cut} \; | \; \Delta \Psi(i, j) \leq 3.5^{\circ}}{\sum_i
+\sum_{j=i+1} w_i \cdot w_j \; | \; \Delta \Psi(i, j) \leq 3.5^{\circ}}
+\end{equation}
+
+\begin{figure}[h]
+ \begin{minipage}{0.5\textwidth}
+ \captionsetup{width=.9\textwidth}
+  \includegraphics[width=\textwidth]{fig/Pllhparam.pdf}
+\caption{The probability of neutrino events to pass the cut on the test
+statistic and the dependency on the logarithm of the $t_{90}$ value for a
+certain cosinus bin. The red line represents the parameterization.}
+\label{fig:Pllhparam}
+ \end{minipage}
+ \begin{minipage}{0.5\textwidth}
+ \captionsetup{width=.9\textwidth}
+  \includegraphics[width=\textwidth]{fig/Pllhparam_quality.pdf}
+\caption{Using a second dataset, a histogram of the ratio between the calculated
+and parametrized values is shown. Most GRBs fall within 5\% derivation while
+some outliers differ up to 12\%.\\}
+ \end{minipage}
+\end{figure}
+
+The parameterization of $P_\text{llh}$ is more complicated than
+$P_{3.5^\circ}$. The test statistic depends not only on properties of simulated
+neutrino events and thus the zenith angle but on the time window between two
+neutrinos and thus $t_{90}$. Therefore, the data is split into ??? cosinus bin
+and the probability is fitted against the logarithm of the drawn $t_{90}$ (Eq.
+\ref{eq:t90dist} and \ref{eq:t90earth}) value. An example is shown in figure
+\ref{fig:Pllhparam}. The quality of the parameterization for all cosinus bins is
+tested using a second dataset and forming a histogram of the ratio between the
+simulated probability and the parametrized one. Most events are within 5\%
+derivation however some differ up to 12\%. The outlier's effects should average
+out by simulating a great number of GRBs (usually 5 million per dataset).
+
+%proof that outliers average out???
+%where do they lie??? which GRBs???
+
+
+\paragraph{P$_\text{onS}$}$\;$\\
+The Optical Follow-Up program calculates the weighted mean direction from both
+events using the Cramer Rao error as weights. For a source to be detectable
+with Swift this
+direction must be within 0.5 degrees of the true source direction. The
+probability $P_\text{onS}$ for two events to point back to the source well
+enough is given by
+the ratio of the sum over the event weight products fulfilling the condition
+and the sum over all event weight products:
+\begin{equation}
+P_\text{onS} = \frac{\sum_i \sum_{j=i+1} w_i \cdot w_j |
+\Psi_{\text{weighted mean}}(i, j) - \Psi_{GRB} \leq 0.5^{\circ} \; | \;
+\lambda(i, j)
+\leq \lambda_\text{cut} \; | \; \Delta \Psi(i, j) \leq 3.5^{\circ}}{\sum_i
+\sum_{j=i+1} w_i \cdot w_j \; | \; \lambda(i, j)
+\leq \lambda_\text{cut} \; | \; \Delta \Psi(i, j) \leq 3.5^{\circ}} 
+\end{equation}
+
+It is parametrized with the same methods as $P_\text{llh}$.
+
+
+%more detail? plot?
+
+
+\subsubsection{Probability to Detect a GRB}
+In the previous sections the probabilities to have an XFU trigger were
+explained. They are calculated assuming the existence of two detected
+neutrinos. However, the number of expected neutrinos within IceCube (Eq.
+\ref{eqn:Nexp_wZB_wEpsStar}) can be smaller or larger. The final probability
+to detect a GRB with the Optical Follow-Up considers the number of possible
+doublets - and thus possible higher multiplets. These considerations are
+described in this chapter.
+
+% To detect a GRB in neutrinos we do not only need two or more detected neutrinos
+% in IceCube, but also the cuts of the Follow-up Programm have to be fullfilled.
+% One criterium is that given the case two neutrinos are detected the difference
+% between their reconstructed directions has to be smaller than 3.5$^\circ$. In
+% Figure \ref{fig:skymap_grb} the reconstructed directions are shown for one
+% example.
+% 
+% 
+% \begin{figure}
+% % [htb] 
+%     \subfloat[GRB and reconstructed
+% $\nu$]{\includegraphics[width=0.48\textwidth]{fig/skymap_grb_mod.png}}
+%     \hfill
+% \subfloat[Close-
+% up.]{\includegraphics[width=0.48\textwidth]{fig/skymap_grb_zoom.png}}
+%     \caption{\label{fig:skymap_grb}For this Figure all true neutrino directions
+% have been shifted onto the GRB (red star) and the reconstructed neutrino
+% directions are shown. In the lefthand Figure one sees that only few neutrinos
+% are far off the GRB, while the righthand Figure provides a more detailed view.}
+% \end{figure}
+% 
+% The most direct way to obtain the probability that the angular criterium is
+% fullfilled is to look up for every possible combination of two neutrinos,
+% whether they are close enough or not. By multiplying and adding up the
+% Oneweights of those neutrino pair, we take into account the probability that
+% those two neutrinos are detected.
+% 
+% However this method is very time consuming and we therefore tried to find a way
+% to parametrize the probability P3p5.
+% 
+% \emph{TO BE CONTINUED}

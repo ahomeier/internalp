@@ -1,0 +1,101 @@
+\section{GRB models}
+\label{sec:GRB_models}
+Most GRB analysis within IceCube use information from observed GRBs to look
+for neutrino clusters in time and space correlation with the detected GRBs.
+This strategy has the obvious advantage of reducing the neutrino background to
+achieve higher significance per GRB observation. However, due to the limited
+Field of View of the satellites there will be many GRBs that stay undetected.
+Furthermore, one is biased by the detection sensitivity of the satellites.
+
+In this analysis, a GRB population is assumed based on theoretical work and
+extrapolation based on data from Swift and other satellites. The redshift and
+luminosity functions are extracted.
+The neutrino luminosity function is assumed to have the same shape and is
+shifted in energy by an efficiency factor $\epsilon$ (see section ???).
+%  to calculate their
+% expected signal in IceCube.
+The different population models under consideration are discussed in this
+chapter.
+
+The main analysis has been done based on the luminosity function and GRB rate
+density calculated by Wanderman and Piran (\ref{ssec:WP}). 
+The other models presented here were considered to examine the dependency on
+the assumed model.
+
+\subsection{Cosmology}
+The following cosmological definitions are used in the further calculations.
+
+\textbf{Differential co-moving shell volume} 
+\begin{equation}
+dV = 4 \pi D_H \frac{(1+z)^2D_a^2(z)}{K(z)}dz
+\end{equation}
+\textbf{Hubble distance}
+\begin{equation}
+ D_H = \frac{c}{H_0} = 3000 h^{-1}\text{Mpc}
+\end{equation}
+\textbf{Angular distance}
+\begin{equation}
+ D_a(z) = (1+z)^{-2} D_l(z)
+\end{equation}
+\textbf{Parameters} 
+\begin{itemize}
+  \item  $K(z) = \sqrt{\Omega_m (1 + z)^3 + \Omega_{\Lambda}}$
+ \item $h=0.7$
+ \item $\Omega_m = 0.3$
+ \item $\Omega_\Lambda$
+\end{itemize}
+
+\input{subfiles/GRB_models/WandermanPiran/WandermanPiran}
+\input{subfiles/GRB_models/HowellC/HowellC}
+\subsection{Long low luminosity GRBs}
+In recent years, IceCube has started to rule out the first optimistic GRB
+neutrino emission models leading to new ideas as to possible neutrino emitters.
+It has been proposed (reference ???) that a high number of very low
+luminosity GRBs exists that are difficult to detect in $\gamma$-rays but could
+produce most of the neutrinos expected from GRBs. In principle, the follow-up
+analysis based on IceCube triggers can be an approach to examine these objects.
+Thus they are mentioned here briefly for completeness sake. 
+
+Unfortunately, these low luminosity GRBs are predicted to have a prompt
+emission phase in the range of $10^3$ s. The follow-up program suppresses
+background by allowing a maximal time difference of 100s between two events
+reducing the sensitivity to very long GRBs at the same time. Therefore, they
+have not been examined yet within this analysis but mentioned for the 
+interested reader.
+
+\subsection{Supernovae}
+The models presented described GRB population models. However, the Optical 
+Follow-Up is sensitive to all short ($O(10 \text{ s})$) transient neutrino 
+sources. E.g. the simulation can be used to examine a population of core 
+collapse SN as well. A model predicting high energy neutrinos from SNe (AB 
+reference ???) assumes a jet production withing the SN similar to the jets of 
+the GRB fireball model. Due to the lack of energy they do not penetrate the 
+stellar envelope and are therefore invisible due the telescopes 
+observing the electromagnetic signal. In contrast, neutrinos would escape the 
+SN and could possibly be detected within IceCube. The exact mechanism and 
+resulting predicted spectrum is not important for this analysis as we assume a 
+population of sources and attribute them a spectrum that reproduces the 
+measured HESE flux.
+%Nora s work
+
+SNe follow the star formation rate which, in first order, can be approximated 
+by the Wanderman Piran redshift distribution. However, the luminosity function 
+differs quite a bit by not showing the big variations in luminosity that are 
+observed for GRBs. Instead, the luminosity function is assumed to follow a 
+Gaussian curve in logarithmic space with a width of 0.4 orders of magnitudes 
+corresponding to a width of one astronomical magnitude. A comparison to the WP 
+luminosity function is shown in Figure \ref{fig:lum_SN}. The mean luminosity is 
+chosen at random and will be later adjusted to create the expected neutrino 
+flux (Section ???).
+
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.65\textwidth]{fig/Lpeak_wp_SN.pdf}
+\caption{}
+\label{fig:lum_SN}
+\end{figure}
+
+
+\input{subfiles/GRB_models/t90/t90}
+% \input{subfiles/GRB_models/comparison/comparison}

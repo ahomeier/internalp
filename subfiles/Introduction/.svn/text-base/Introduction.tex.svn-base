@@ -1,0 +1,42 @@
+\section{Introduction}
+This study examins the contribution of transient sources to the astrohpysical
+neutrino flux meassured by IceCube (HESE flux). The special focus will be
+placed upon Gamma Ray Bursts (GRBs). 
+
+Contrary to most studies which use external GRB triggers from satelites like
+Swift and Fermi, this result is based on the opposite idea of using neutrinos
+to trigger follow-up observations with Swift and optical telescopes. The
+disadavantage of this approach is the additional background while the advantage
+is the $2\pi$ field of view (FoV) (northern sky only) and the indepence of any
+gamma-ray sensitivity of the satelites.
+Instead of using real meassured GRBs, a Toy Monte Carlo was written to simulate
+the neutrino flux from a GRB population up to a redshift of eight. The GRB
+population and luminosity function is mainly based on a model by Wanderman and
+Piran (section \ref{sec:GRB_models}). Other models are included to study the
+model dependency.
+
+The neutrino signal will be studied on the level of the Optical- and X-Ray
+Follow Up - O(X)FU - and compared to the meassured data. The OFU is described
+in more detail in section \ref{sec:OFU}. 
+
+The GRB population model, simulated GRB neutrinos and experimental results will
+be combined within the analysis frame work of the GRB population Toy Monte
+Carlo. It is explained in more detail in section \ref{sec:GRBTMC} while the main
+results are summarized and discussed in section \ref{sec:Results}.
+
+\begin{table}[hb]
+\begin{center}
+  \begin{tabular}{|l|c|}
+\hline
+Differential co-moving shell volume &  $ dV = 4 \pi D_H \frac{(1+z)^2
+D_a^2(z)}{K(z)}dz$ \\[2ex]
+Hubble distance & $D_H = \frac{c}{H_0} = 3000 h^{-1}\text{Mpc}$ \\[2ex]
+angular distance & $D_a(z) = (1+z)^{-2} D_l(z)$ \\[2ex]
+&  $K(z) = \sqrt{\Omega_m (1 + z)^3 + \Omega_{\Lambda}}$\\[2ex]
+Parameters & $h=0.7$, $\Omega_m = 0.3$, $\Omega_\Lambda$ \\[2ex]
+\hline
+  \end{tabular}
+\caption{Cosmological definitions}
+\label{tab:cosm_defs}
+\end{center}
+\end{table}

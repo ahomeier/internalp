@@ -1,0 +1,232 @@
+\subsection{Number of expected Neutrinos}
+The simulation uses nugen datasets to calculate the number of expected
+neutrinos according to the standard formula
+\begin{equation}
+ N_\text{exp} = \sum_i\frac{dF_P(E_i)}{dE} \cdot
+\frac{OneWeight_i}{N_\text{generated}}
+\end{equation}
+The differential particle fluence $\frac{dF_P}{dE}$ at earth needs to be
+calculated based on the GRB properties drawn at source (peak luminosity
+$\hat{L}_\text{Peak}$, $\hat{t}_{90, S}$, redshift). They are marked with a
+hat.
+
+\input{subfiles/GRB_Toy_Monte_Carlo/Nexp/zenith_bands}
+\input{subfiles/GRB_Toy_Monte_Carlo/Nexp/shift2source}
+
+
+
+
+\subsubsection{Total Emitted Energy as Source $\hat{E}_{\nu, \text{total}}$}
+\label{sec:Etotal}
+The peak luminosity and the 90\% time window can be used to calculate the
+total energy output of the GRB in neutrinos if the light curve is known. In
+this work a fast rise and rapid decay (FRED) light curve with an instant jump
+to the peak luminosity and an exponential decay afterwards is assumed. 
+
+%comment about test if this is folded into normalization?
+
+The luminosity at a given time is defined as 
+\begin{equation}
+ \hat{L}(\hat{t}) = \hat{L}_{\text{Peak}} \cdot e^{\left(-
+\frac{\hat{t}}{\hat{\tau}}\right)}
+\end{equation}
+The total energy is the time integral over the time dependent luminosity
+distribution
+\begin{equation}
+\label{eq:Eiso}
+\begin{align}
+ \hat{E}_{\nu, \text{total}} & =  \int_0^{\infty} \hat{L}(\hat{t}) d\hat{t} 
+	  =  L_{\text{Peak}} \int_0^{\infty} e^{-\frac{t}{\tau}} dt\\
+	 & = - \hat{\tau} \cdot \hat{L}_{\text{Peak}} \left[
+e^{-\frac{\hat{t}}{\hat{\tau}}}
+\right]_0^{\infty}
+          = \hat{\tau} \cdot \hat{L}_{\text{Peak}}
+\end{align}
+\end{equation}
+The final shape of the distribution depends on the unknown $\tau$ which needs to
+be replaced by a known quantity such as the 90 \% time window
+$\hat{t}_{90}$ in which 90\% or $\hat{E}_{\nu, 90}=0.9 \cdot \hat{E}_{\nu,
+\text{total}}$ were
+observed. 
+The amount of energy radiated within this time can be determined with
+\begin{equation}
+ \begin{align}
+  \hat{E}_{\nu, 90} & = 0.9 \cdot \hat{E}_{\nu, \text{total}} = 0.9 \cdot
+\hat{\tau} \hat{L}_{\text{Peak}} = 
+\int_0^{\hat{t}_{90}} \hat{L}(\hat{t}) d\hat{t} \\
+         & = - \hat{\tau} \hat{L}_{\text{Peak}}
+\left[e^{-\frac{\hat{t}}{\hat{\tau}}} \right]_0^{\hat{t}_{90}}
+= \hat{\tau} \hat{L}_{\text{Peak}} \left[1 -
+e^{-\frac{\hat{t}_{90}}{\hat{\tau}}} \right]
+ \end{align}
+\end{equation}
+leading to 
+\begin{equation}
+ \begin{align}
+  \left[ 1 - e^{-\frac{\hat{t}_{90}}{\hat{\tau}}} \right] &= 0.9 \\
+ 0.1 & = e^{-\frac{\hat{t}_{90}}{\hat{\tau}}} \\
+ \text{ln}(0.1) & = -\frac{\hat{t}_{90}}{\hat{\tau}}\\
+ \Rightarrow \hat{\tau} &= \frac{-\hat{t}_{90}}{\text{ln}(0.1)}
+ \label{eq:ToyMC_tau}
+ \end{align}
+\end{equation}
+Entering this in equation \ref{eq:Eiso} leads to:
+\begin{equation}
+ \hat{E}_{\nu, \text{total}} = - \hat{L}_{\text{Peak}}
+\frac{\hat{t}_{90}}{\text{ln}(0.1)}
+\end{equation}
+
+
+\subsubsection{Fluence at Source}
+The simulation draws GRB properties at source. In the first step they are used
+to calculate the differential particle fluence in energy
+$\frac{d\hat{F}_P}{d\hat{E}}$ in units $\text{GeV}^{-1}
+\text{s}^{-1}\text{sr}^{-1} \text{cm}^{-2}$ at a small co-moving distance from
+the source $\hat{d}_0$. The spectral shape is a generalization based on the fits
+to the HESE flux (eq. \ref{eq:HESEflux_gen}).
+
+\begin{equation}
+ \frac{d\hat{F}_P}{d\hat{E}} = \frac{\hat{F}_0}{4 \pi \hat{d}_0^2} \cdot
+\hat{E}^{-\gamma} \text{exp} \left( - \frac{\hat{E}}{\hat{E}_\text{cut}} \right)
+\end{equation}
+The fluence normalization $\hat{F}_0$ is unknown. However, in the previous
+section \ref{sec:Etotal} the total emitted energy was calculated. It equals the
+integral over $\hat{E} \cdot \frac{d\hat{F}_P}{d\hat{E}}$.
+
+\begin{equation}
+ \hat{E}_{\nu, \text{total}} = \int_{\hat{E}_{min}}^\infty \hat{E} \hat{F}_0
+\hat{E}^{-\gamma} \text{exp} \left(  -
+\frac{\hat{E}}{\hat{E}_\text{cut}}\right) d\hat{E} = \hat{F}_0
+\Upsilon \left(\hat{E}_{min}, \hat{E}_\text{cut}\right)
+\end{equation}
+The result depends on two GRB parameters which are chosen equally
+in for all GRBs: A minimal energy of the neutrinos $\hat{E}_{min}$ and the
+break energy $\hat{E}_{cut}$. Once, these parameters are chosen, $\Upsilon$ is
+a constant for all GRBs and the differential particle fluence in energy at
+source can be written as
+
+\begin{equation}
+ \frac{d\hat{F}_P}{d\hat{E}} = \frac{\hat{E}_{\nu, \text{total}}}{4 \pi
+d_0^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
+\hat{E}^{-\gamma}
+\text{exp} \left( - \frac{\hat{E}}{\hat{E}_\text{cut}} \right)
+\label{eq:partFluenceS}
+\end{equation}
+%  The impact 
+
+\subsubsection{Fluence at Earth}
+Having derived the fluence at source, cosmological effects need to be taken
+into account when calculating the fluence at earth. The energy and time
+at source relate to the values at earth with $\hat{E} = (1 + z) E$ and 
+$\hat{t} = \frac{t}{1+z}$. 
+The energy flux at earth $\Phi_E$ is linked to the luminosity via
+\begin{equation}
+\label{eq:PhiEL}
+ \Phi_E (t) = \frac{\hat{L} \left(\hat{E}, \hat{t} \right)}{4 \pi d_l^2} =
+\frac{L \left(E, t \right)}{4 \pi d_l^2}
+\end{equation}
+with the luminosity distance $d_l=(1+z) \cdot d_c$.
+The particle fluence $F_P$ at earth is the time integrated particle flux
+$\Phi_P$ which in turn is the energy derivative of the energy flux.
+\begin{equation}
+F_P(E) = \int \Phi_P(E,t)\, dt = \int
+\frac{d\Phi_E(E,t)}{dE}\,dt 
+% = \frac{dN(E)}{dA}
+\label{eqn:fluence}
+\end{equation}
+
+% \begin{equation}
+% \Phi_E (t) = \int \Phi_P(E,t) \, dE = \int \frac {dN(E,t)}{dA\,dt}\, dE.
+% \label{eqn:fluxes}
+% \end{equation}
+% \begin{eqnarray}
+%   \frac {dN(E,t)}{dA\,dt} = \Phi_P =  \frac{d\Phi_E(E,t)}{dE}
+%    & = & \frac{1}{4 \pi d_l^2} \frac {d L(t)}{dE}
+% \end{eqnarray}
+% \begin{eqnarray}
+% \frac {dF_P(E)}{dE} = \frac {dN(E)}{dA\,dE} & = &  \int \frac{\Phi_P(E,t)}{dE}\,
+% dt %\\
+% %   & = & \frac{1}{4 \pi d_l^2} \int \frac{d^2 L(t)}{dE^2} dt
+%   \label{eqn:local}
+% \end{eqnarray}
+The energy flux can be replaced with the luminosity according to
+\ref{eq:PhiEL}. Applying a derivation in energy and transforming energy and
+time to the source frame, one obtains
+\begin{eqnarray}
+  \frac {dF_P(E)}{dE}
+     & = &  \frac{1}{4 \pi d_l^2} \int \frac{d^2 L(t)}{dE^2} dt \\
+     & = &  \frac{1}{4 \pi d_l^2} \int \frac{d^2 L(\hat{t})}{d\hat{E}^2}
+     \frac{d^2\hat{E}}{dE^2} \frac{dt}{d\hat{t}}
+     d\hat{t} \\
+     & = & \frac{(1+z)^3} {4 \pi d_l^2} \int \frac{d^2 L(\hat{t})}{d\hat{E}^2}
+     d\hat{t}
+     \label{eqn:final}
+\end{eqnarray}
+A similar equation is true for differential particle fluence in energy near the
+source at a distance $d_0$.
+\begin{eqnarray}
+\frac {d\hat{F}_P(\hat{E})}{d\hat{E}}
+  & = & \frac{1}{4 \pi d_0^2} \int \frac{d^2 L(\hat{t})}{d\hat{E}^2} d\hat{t}
+  \label{eqn:grb}
+\end{eqnarray}
+Combining equation \ref{eqn:final} and \ref{eqn:grb} relates the differential
+particle fluence at earth to the differential particle fluence at source
+derived in \ref{eq:partFluenceS}.
+\begin{eqnarray}
+  \frac{dF_P(E)}{dE}
+    & = & \left(\frac{d_0}{d_l}\right)^2 (1+z)^3 \frac
+{d\hat{F}_P(\hat{E})}{d\hat{E}} \\
+&=& \frac{\hat{E}_{\nu, \text{total}}}{4 \pi
+d_l^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
+\hat{E}^{-\gamma}
+\text{exp} \left( - \frac{\hat{E}}{\hat{E}_\text{cut}} \right) \cdot (1+z)^3 \\
+&=& \frac{\hat{E}_{\nu, \text{total}}}{4 \pi
+d_l^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
+E^{-\gamma}
+\text{exp} \left( - \frac{E \cdot (1+z)}{\hat{E}_\text{cut}} \right) \cdot
+(1+z)^{3 - \gamma}
+\end{eqnarray}
+In the last step the energy at source was replaced with the energy at earth in
+consideration of the cosmological effects. This formula can now be used to
+calculate the number of expected neutrinos within IceCube given the drawn
+properties and a nugen dataset (section \ref{subsubsec:NExp}).
+
+\subsubsection{Number of Expected Neutrinos Within IceCube}
+\label{subsubsec:NExp}
+This chapter described how the differential particle fluence in energy can be
+derived from the drawn parameters describing a GRB in this simulation. The
+number of expected neutrinos is  given with
+
+%??? detail about  nugen and oneweight. cite paper on oneweight. detector
+% response
+
+\begin{equation}
+\begin{align}
+ N_\text{exp} & = \sum_i\frac{dF_P(E_i)}{dE} \cdot
+\frac{OneWeight_i}{N_\text{generated} \cdot A_{ZB}} \\
+&= \sum_i \cdot \frac{\hat{E}_{\nu, \text{total}}}{4 \pi
+d_l^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
+E_i^{-\gamma}
+\text{exp} \left( - \frac{E_i \cdot (1+z)}{\hat{E}_\text{cut}} \right) \cdot
+(1+z)^{3 - \gamma}
+\frac{OneWeight_i}{N_\text{generated} \cdot \frac{A_{ZB}}{4 \pi}}
+\end{align}
+\end{equation}
+It is dependent on various factors of the nugen simulation and some parameters
+from the derivation of the differential particle fluence. The nugen simulation
+describes the probability for each simulated event $i$ to reach the detector,
+interact within its effective volume and to be detected ($OneWeight_i$), the
+individual energy $E_i$, the number of generated MC neutrino events
+$N_\text{generated}$ and a re-weighting factor $\frac{A_{ZB}}{4 \pi}$. The
+re-weighting factor will be explained in more detail in section ???. 
+
+Furthermore, the number of expected neutrino is dependent on the redshift of
+the GRB, the total emitted energy in neutrinos $\hat{E}_{\nu, \text{total}}$ -
+and thus $\hat{L}_\text{Peak}$ and $\hat{t}_{90}$ - as well as the constant
+$\Upsilon$. The constant itself is dependent on the energy of the cut-off
+$\hat{E}_\text{cut}$ and the minimal neutrino energy at source $\hat{E}_{min}$.
+As described in ??? the cut-off energy will be optimized to reproduce the
+observed cut-off or set to very high values depending on the spectrum that is
+used (see ???). The effect of the minimal energy can be either absorbed into
+the normalization to the HESE flux (chapter ???) or specific cases and their
+impact can be studied (chapter ???).

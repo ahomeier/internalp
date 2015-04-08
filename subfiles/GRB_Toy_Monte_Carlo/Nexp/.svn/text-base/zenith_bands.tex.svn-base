@@ -1,0 +1,37 @@
+\subsubsection{Zenith Bands}
+\label{sec:zenith_bands}
+The probability to detect a neutrino is highly dependent on the zenith angle of
+its origin. The number of expected neutrinos within IceCube can be
+calculated for all simulated events (eq. \ref{eq:Nexp_general}). However, these
+are distributed over the whole sky and might not represent a GRB from a
+specific direction very well. Therefore only events from a zenith region around
+a drawn direction will be used to calculate the expected signal. The true
+direction of each considered event needs to be within a range around the GRB
+direction in $\text{Cos} \Theta$
+\begin{equation}
+\text{Cos}\left(\Theta_{\nu, \text{true}}\right) \in
+\left[\text{Cos}\left(\Theta_\text{GRB}\right) - ZBW,\,
+\text{Cos}\left(\Theta_\text{GRB}\right) +
+ZBW\right]
+\end{equation}
+The zenith band width is set to $ZBW = 0.05$ and equal in cosinus of the zenith
+angle to achieve similar (and enough) statistics near pole and horizon. 
+
+%??? above horizon?
+
+%A side effect might be that more deviation towards pole 
+Consequently, the number of expected neutrino events within the detector (eq.
+\ref{eq:Nexp_general}) is not calculated anymore based on the total number of
+generated events $N_\text{generated}$ over the whole sky but only a fraction of
+events within the zenith band. Therefore, $N_\text{generated}$ needs to be
+replaced by an effective number of generated events
+\begin{equation}
+N_\text{generated}^\text{eff} = N_\text{generated} \cdot \frac{A_{ZB}}{4\pi}
+\end{equation}
+in which $A_{ZB}$ is the area of the zenith band. The number of expected
+neutrinos is then 
+\begin{equation}
+\label{eq:Nexp_wZB}
+ N_\text{exp}^\nu = \sum_i\frac{dF_P(E_i)}{dE_i} \cdot
+\frac{OneWeight_i}{N_\text{generated}}
+\end{equation}

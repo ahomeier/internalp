@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Optical- and X-Ray Follow Up}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Alert system}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Monitoring}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Background Expectation}{}% 5
+\BOOKMARK [1][-]{section.4}{GRB models}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Cosmology}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Wanderman Piran}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Howell Coward}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Long low luminosity GRBs}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Supernovae}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{T90}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{GRB Toy Monte Carlo}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{GRB Spectra}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Drawing GRB properties}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Number of expected Neutrinos based on NuGen Datasets}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Zenith Bands}{subsection.5.3}% 17
+\BOOKMARK [2][-]{subsection.5.4}{Shifting Event Positions to GRB position}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Total Emitted Energy as Source , total}{subsection.5.4}% 19
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Fluence at Source}{subsection.5.4}% 20
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Fluence at Earth}{subsection.5.4}% 21
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Number of Expected Neutrinos Within IceCube}{subsection.5.4}% 22
+\BOOKMARK [2][-]{subsection.5.5}{Normalization to HESE Flux}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.5.1}{* - Monte Carlo Based}{subsection.5.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.5.2}{* - Semi-Analytic Approach}{subsection.5.5}% 25
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Influence of min}{subsection.5.5}% 26
+\BOOKMARK [2][-]{subsection.5.6}{Detection Probabilities}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Doublet Probabilities}{subsection.5.6}% 28
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Probability to Detect a GRB}{subsection.5.6}% 29
+\BOOKMARK [1][-]{section.6}{Significance and Limit calculation}{}% 30

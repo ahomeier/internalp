@@ -1,0 +1,60 @@
+\section{GRB Toy Monte Carlo}
+\label{sec:GRBTMC}
+The previous chapters have laid the ground work on which the GRB Population Toy
+Monte Carlo is built. This chapter describes how GRBs are being drawn according
+to the models described in section ??? and how the neutrino signal expectation
+within IceCube is calculated. 
+
+What about GRB counting and so on?
+
+test statistic? next chapter?
+
+\subsection{GRB Spectra}
+The astrophysical neutrinos discovered by IceCube can be described by various
+spectra depending on the data and conditions set for the fit. This
+analysis examines three different scenarios.
+
+The first two scenarios are based on global fits not only to the HESE events but
+to other datasets as well. Once a fit with a cut-off was chosen and once the
+index of the power law was free. The third fit is exclusevly based on the HESE
+data with a free index:
+
+{\bf Global fit: cut-off}
+\begin{equation}
+ E^2 \Phi = 0.9 \cdot 10^{-8} \cdot \text{exp}\left(-\frac{E}{2.8 \text{ PeV}}
+\right) \text{GeV s}^{-1} \text{ sr}^{-1} \text{ cm}^{-2}
+\end{equation}
+{\bf Global fit: free index}
+\begin{equation}
+ E^2 \Phi = 2.24 \cdot 10^{-8} \left(\frac{E}{100 \text{ PeV}} \right)^{-0.7}
+\cdot \text{exp}\left(-\frac{E}{2.8 \text{ PeV}}
+\right) \text{GeV s}^{-1} \text{ sr}^{-1} \text{ cm}^{-2}
+\end{equation}
+{\bf HESE fit: free index}
+\begin{equation}
+ E^2 \Phi = 1.5 \cdot 10^{-8} \left(\frac{E}{100 \text{ PeV}} \right)^{-0.3}
+\cdot \text{exp}\left(-\frac{E}{2.8 \text{ PeV}}
+\right) \text{GeV s}^{-1} \text{ sr}^{-1} \text{ cm}^{-2}
+\end{equation}
+
+For the purpose of this analysis these spectra are assumed to be created by
+GRBs or other examined transient sources and as such a superposition of the
+individual GRB spectra. They are given the same shape.
+Generally, the flux follows the following formula which will be used in the
+following chapters for general calculations.
+\begin{equation}
+ \Phi = \Phi_0 E^{-\gamma} \text{exp} \left(-\frac{E}{\hat{E}_{cut}} \right)
+\end{equation}
+The break energy $\hat{E}_{cut}$ is set to be a physics parameter that is the
+same for all GRBs. In case of scenario 1 it has to be optimized to reproduce
+the cutoff at earth of 2.8 PeV as good as possible. In the other two cases it
+is set to $10^{20}$ GeV and doesn't have any impact within the further analysis.
+
+
+
+
+\input{subfiles/GRB_Toy_Monte_Carlo/Drawing_Properties/Drawing_Properties}
+\input{subfiles/GRB_Toy_Monte_Carlo/Nexp/Nexp}
+\input{subfiles/GRB_Toy_Monte_Carlo/zenith_bands/zenith_bands}
+\input{subfiles/GRB_Toy_Monte_Carlo/shift2source/shift2source}
+\input{subfiles/GRB_Toy_Monte_Carlo/det_probs/det_probs}

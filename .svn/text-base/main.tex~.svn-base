@@ -1,0 +1,77 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage{import}
+\usepackage{subfig} 
+\usepackage{amsmath}
+% \usepackage{subfiles}
+
+\usepackage{units}
+\usepackage{wrapfig}
+% \usepackage{booktabs}
+\usepackage[parfill]{parskip}
+\RequirePackage{mathptmx}
+% \RequirePackage{ftnright}
+\RequirePackage{fancyhdr}
+%\RequirePackage{graphicx}
+\usepackage[pdftex]{graphicx}
+% \usepackage{sidecap}
+\RequirePackage{hyperref}
+% \usepackage{hyperref}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{caption}
+\usepackage{framed}
+\usepackage[sort,round]{natbib}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\numberwithin{equation}{section}
+% \usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+% \includeonly{}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\include{subfiles/Introduction/Introduction}
+% \section{Cosmological Definitions}
+% \begin{table}
+% \begin{center}
+%   \begin{tabular}{|l|c|}
+% \hline
+% Differential co-moving shell volume &  $ dV = 4 \pi D_H \frac{(1+z)^2
+% D_a^2(z)}{K(z)}dz$ \\[2ex]
+% Hubble distance & $D_H = \frac{c}{H_0} = 3000 h^{-1}\text{Mpc}$ \\[2ex]
+% angular distance & $D_a(z) = (1+z)^{-2} D_l(z)$ \\[2ex]
+% &  $K(z) = \sqrt{\Omega_m (1 + z)^3 + \Omega_{\Lambda}}$\\[2ex]
+% Parameters & $h=0.7$, $\Omega_m = 0.3$, $\Omega_\Lambda$ \\[2ex]
+% \hline
+%   \end{tabular}
+% \caption{Cosmological definitions}
+% \label{tab:cosm_defs}
+% \end{center}
+% \end{table}
+
+
+
+\include{subfiles/GRB_models/GRB_models}
+\include{subfiles/OFU/OFU}
+\include{subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo}
+\include{subfiles/Results/Results}
+\include{subfiles/Discussion/Discussion}
+
+% \section{}
+
+\end{document}
