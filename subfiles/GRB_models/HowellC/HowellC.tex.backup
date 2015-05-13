@@ -48,7 +48,6 @@ HC than in WP which should lead to a slight weakening of the limits.
 
 \begin{figure}[ht]
 % [htb] 
-   
 \subfloat[Luminosity functions]
 {\includegraphics[width=0.48\textwidth]{fig/grb_models_lum_comp_L45.pdf}}
     \hfill
@@ -57,7 +56,7 @@ HC than in WP which should lead to a slight weakening of the limits.
     \caption{The luminosity functions (left) from the
 Wanderman-Piran model and two functions from the HC model on the left. The WP
 only take into account luminosities in the range of $10^{50} - 10^{54}$ erg / s
-which is reflected in the shorter red line.\\
+which is reflected in the shorter blue line.\\
 The redshift distributions (right) develop similar up to $z=3.11$ at which point
 it breaks for the WP-model. The HC predicts more GRBs at higher redshift
 values.}
@@ -65,6 +64,6 @@ values.}
 \end{figure}
 
 
-While most of cases discussed in (reference ???) imply independentend luminosity
-and redshift, a correction is given to examine the influence of a possible
-evolution. This will be added at a later point as a third comparison model.
+% While most of cases discussed in (reference ???) imply independentend luminosity
+% and redshift, a correction is given to examine the influence of a possible
+% evolution. This will be added at a later point as a third comparison model.

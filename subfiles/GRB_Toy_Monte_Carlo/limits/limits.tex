@@ -1,5 +1,6 @@
 \newpage
 \section{Significance and Limit calculation}
+\label{sec:limits}
 This 
 section will describe the test statistic to evaluate the conformity with 
 background of the measured alerts.
@@ -166,20 +167,18 @@ An example is shown in Figures \ref{fig:test_statistic} and
 \ref{fig:test_statistic_cumulative}.
 \begin{figure}[h]
 \centering
- \captionsetup{width=.4\textwidth}
+ \captionsetup{width=.9\textwidth}
 %  \captionsetup{margin=0pt}
-\subfloat[$10^6$ experiments were thrown and the 
+\subfloat[Differential distribution\label{fig:test_statistic}]{%
+ \includegraphics[width=0.45\textwidth]{fig/test_statistic.pdf}}
+ \subfloat[cumulative distribution\label{fig:test_statistic_cumulative}]{%
+\includegraphics[width=0.45\textwidth]{fig/test_statistic_cumulative.pdf}}
+\caption{$10^6$ experiments were thrown and the 
 test statistic $\lambda$ was calculated according 
 to equation \ref{eq:test_statistic}. In read is the differential
 distribution of the Monte Carlo experiments while 
-the black line represents the detected value.\label{fig:test_statistic}]{%
- \includegraphics[width=0.45\textwidth]{fig/test_statistic.pdf}}
- \subfloat[In read is the cumulative
-distribution of the Monte Carlo experiments while 
 the black line represents the detected value. About 90\% of the experiments 
-have a worse agreement with the background only hypothesis.
-\label{fig:test_statistic_cumulative}]{%
-\includegraphics[width=0.45\textwidth]{fig/test_statistic_cumulative.pdf}}
+have a worse agreement with the background only hypothesis.}
 \end{figure}
 
 % % in thesis write abortion of quadruplets in bg//????

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.27)  8 APR 2015 14:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.27)  11 MAY 2015 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -966,7 +966,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 ) (./main.aux
 (./subfiles/Introduction/Introduction.aux) (./subfiles/OFU/OFU.aux)
 (./subfiles/scrambling/scrambling.aux) (./subfiles/GRB_models/GRB_models.aux)
-(./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux))
+(./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux)
+(./subfiles/Results/Results.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -1107,10 +1108,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
-
-
-LaTeX Warning: Reference `sec:Results' on page 2 undefined on input line 26.
-
 ) [2
 
 ]
@@ -1137,7 +1134,7 @@ If that doesn't work, type  X <return>  to quit.
 \openout2 = `subfiles/scrambling/scrambling.aux'.
 
  (./subfiles/scrambling/scrambling.tex
-<fig/scrambling_illustration.pdf, id=164, 796.9775pt x 597.23125pt>
+<fig/scrambling_illustration.pdf, id=189, 796.9775pt x 597.23125pt>
 File: fig/scrambling_illustration.pdf Graphic file (type pdf)
 
 <use fig/scrambling_illustration.pdf>
@@ -1152,7 +1149,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./fig/scrambling_illustration.pdf>]
-<fig/swift_scrambling.pdf, id=194, 417.7206pt x 335.8763pt>
+<fig/swift_scrambling.pdf, id=219, 417.7206pt x 335.8763pt>
 File: fig/swift_scrambling.pdf Graphic file (type pdf)
 
 <use fig/swift_scrambling.pdf>
@@ -1163,7 +1160,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 106--106
 [] [] 
  []
 
-<fig/swift_scrambling_cum.pdf, id=195, 417.7206pt x 327.92657pt>
+<fig/swift_scrambling_cum.pdf, id=220, 417.7206pt x 327.92657pt>
 File: fig/swift_scrambling_cum.pdf Graphic file (type pdf)
 
 <use fig/swift_scrambling_cum.pdf>
@@ -1191,7 +1188,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
 
 (./subfiles/GRB_models/WandermanPiran/WandermanPiran.tex
-<fig/RGRB_WP.pdf, id=291, 433.62pt x 289.08pt>
+<fig/RGRB_WP.pdf, id=316, 433.62pt x 289.08pt>
 File: fig/RGRB_WP.pdf Graphic file (type pdf)
  <use fig/RGRB_WP.pdf>
 Package pdftex.def Info: fig/RGRB_WP.pdf used on input line 36.
@@ -1201,7 +1198,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 36--36
 [] [] 
  []
 
-<fig/Rz_WP.pdf, id=292, 433.62pt x 289.08pt>
+<fig/Rz_WP.pdf, id=317, 433.62pt x 289.08pt>
 File: fig/Rz_WP.pdf Graphic file (type pdf)
  <use fig/Rz_WP.pdf>
 Package pdftex.def Info: fig/Rz_WP.pdf used on input line 38.
@@ -1214,7 +1211,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 38--38
 [7
 
 
-] <fig/Lpeak_wp.pdf, id=307, 433.62pt x 289.08pt>
+] <fig/Lpeak_wp.pdf, id=332, 433.62pt x 289.08pt>
 File: fig/Lpeak_wp.pdf Graphic file (type pdf)
  <use fig/Lpeak_wp.pdf>
 Package pdftex.def Info: fig/Lpeak_wp.pdf used on input line 64.
@@ -1232,7 +1229,7 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/Lpeak_wp.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <fig/grb_models_lum_comp_L45.pdf, id=429, 433.62pt x 289.08pt>
+>] <fig/grb_models_lum_comp_L45.pdf, id=454, 433.62pt x 289.08pt>
 File: fig/grb_models_lum_comp_L45.pdf Graphic file (type pdf)
 
 <use fig/grb_models_lum_comp_L45.pdf>
@@ -1240,7 +1237,7 @@ Package pdftex.def Info: fig/grb_models_lum_comp_L45.pdf used on input line 52.
 
 (pdftex.def)             Requested size: 245.82962pt x 163.88628pt.
 
-<fig/grb_models_redshift_comp.pdf, id=430, 433.62pt x 289.08pt>
+<fig/grb_models_redshift_comp.pdf, id=455, 433.62pt x 289.08pt>
 File: fig/grb_models_redshift_comp.pdf Graphic file (type pdf)
 
 <use fig/grb_models_redshift_comp.pdf>
@@ -1251,14 +1248,14 @@ Package pdftex.def Info: fig/grb_models_redshift_comp.pdf used on input line 55
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/grb_models_redshift_comp.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] <fig/Lpeak_wp_SN.pdf, id=523, 417.7206pt x 326.11827pt>
+>] <fig/Lpeak_wp_SN.pdf, id=548, 417.7206pt x 326.11827pt>
 File: fig/Lpeak_wp_SN.pdf Graphic file (type pdf)
 
 <use fig/Lpeak_wp_SN.pdf>
 Package pdftex.def Info: fig/Lpeak_wp_SN.pdf used on input line 94.
 (pdftex.def)             Requested size: 332.89412pt x 259.88979pt.
  (./subfiles/GRB_models/t90/t90.tex
-<fig/t90earth.pdf, id=524, 417.7206pt x 327.42204pt>
+<fig/t90earth.pdf, id=549, 417.7206pt x 327.42204pt>
 File: fig/t90earth.pdf Graphic file (type pdf)
  <use fig/t90earth.pdf>
 Package pdftex.def Info: fig/t90earth.pdf used on input line 5.
@@ -1342,7 +1339,7 @@ l.114  \end{align}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<fig/shift2source_true_minus_shifted_error.pdf, id=682, 433.62pt x 289.08pt>
+<fig/shift2source_true_minus_shifted_error.pdf, id=707, 433.62pt x 289.08pt>
 File: fig/shift2source_true_minus_shifted_error.pdf Graphic file (type pdf)
 
 <use fig/shift2source_true_minus_shifted_error.pdf>
@@ -1350,7 +1347,7 @@ Package pdftex.def Info: fig/shift2source_true_minus_shifted_error.pdf used on
 input line 129.
 (pdftex.def)             Requested size: 512.14963pt x 341.47313pt.
 
-<fig/shift2source_zendependency.pdf, id=683, 433.62pt x 289.08pt>
+<fig/shift2source_zendependency.pdf, id=708, 433.62pt x 289.08pt>
 File: fig/shift2source_zendependency.pdf Graphic file (type pdf)
 
 <use fig/shift2source_zendependency.pdf>
@@ -1362,7 +1359,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 141--141
 [] [] 
  []
 
-<fig/shift2source_azidependency.pdf, id=684, 433.62pt x 289.08pt>
+<fig/shift2source_azidependency.pdf, id=709, 433.62pt x 289.08pt>
 File: fig/shift2source_azidependency.pdf Graphic file (type pdf)
 
 <use fig/shift2source_azidependency.pdf>
@@ -1470,7 +1467,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 53.
 
-<fig/Spectra_on_OFU.pdf, id=894, 867.24pt x 578.16pt>
+<fig/Spectra_on_OFU.pdf, id=919, 867.24pt x 578.16pt>
 File: fig/Spectra_on_OFU.pdf Graphic file (type pdf)
 
 <use fig/Spectra_on_OFU.pdf>
@@ -1512,7 +1509,7 @@ Overfull \hbox (6.84544pt too wide) in paragraph at lines 162--165
 -ther sim-u-la-tion to each GRB us-ing equa-tion []5.39[]. 
  []
 
-<fig/Phi_norm_gamm2.pdf, id=972, 417.7206pt x 314.24098pt>
+<fig/Phi_norm_gamm2.pdf, id=997, 417.7206pt x 314.24098pt>
 File: fig/Phi_norm_gamm2.pdf Graphic file (type pdf)
 
 <use fig/Phi_norm_gamm2.pdf>
@@ -1529,7 +1526,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 174--174
 [] [] 
  []
 
-<fig/Phi_norm_gamm2_Emin.pdf, id=973, 417.7206pt x 314.24098pt>
+<fig/Phi_norm_gamm2_Emin.pdf, id=998, 417.7206pt x 314.24098pt>
 File: fig/Phi_norm_gamm2_Emin.pdf Graphic file (type pdf)
 
 <use fig/Phi_norm_gamm2_Emin.pdf>
@@ -1560,7 +1557,7 @@ rm_gamm2.pdf> <./fig/Phi_norm_gamm2_Emin.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/Phi_norm_gamm2_Emin.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] [22] <fig/P3p5param_bdt_gamma2.pdf, id=1138, 433.62pt x 289.08pt>
+>] [22] <fig/P3p5param_bdt_gamma2.pdf, id=1163, 433.62pt x 289.08pt>
 File: fig/P3p5param_bdt_gamma2.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_bdt_gamma2.pdf>
@@ -1571,7 +1568,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 138--138
 [] [] 
  []
 
-<fig/P3p5param_bdt_gamma2_quality.pdf, id=1139, 417.7206pt x 299.517pt>
+<fig/P3p5param_bdt_gamma2_quality.pdf, id=1164, 417.7206pt x 299.517pt>
 File: fig/P3p5param_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_bdt_gamma2_quality.pdf>
@@ -1583,7 +1580,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 142--142
 [] [] 
  []
 
-<fig/P3p5param_862_gamma2.pdf, id=1143, 433.62pt x 289.08pt>
+<fig/P3p5param_862_gamma2.pdf, id=1168, 433.62pt x 289.08pt>
 File: fig/P3p5param_862_gamma2.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_862_gamma2.pdf>
@@ -1594,7 +1591,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 167--167
 [] [] 
  []
 
-<fig/P3p5param_862_gamma2_quality.pdf, id=1144, 417.7206pt x 299.517pt>
+<fig/P3p5param_862_gamma2_quality.pdf, id=1169, 417.7206pt x 299.517pt>
 File: fig/P3p5param_862_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_862_gamma2_quality.pdf>
@@ -1622,7 +1619,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_bdt_gamma2_quality.pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/Pllh_example_g2_bdt.pdf, id=1505, 433.62pt x 289.08pt>
+<fig/Pllh_example_g2_bdt.pdf, id=1530, 433.62pt x 289.08pt>
 File: fig/Pllh_example_g2_bdt.pdf Graphic file (type pdf)
 
 <use fig/Pllh_example_g2_bdt.pdf>
@@ -1636,7 +1633,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_862_gamma2_quality.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->] <fig/Pllhparam_bdt_gamma2_quality.pdf, id=1867, 417.7206pt x 299.517pt>
+>] <fig/Pllhparam_bdt_gamma2_quality.pdf, id=1892, 417.7206pt x 299.517pt>
 File: fig/Pllhparam_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/Pllhparam_bdt_gamma2_quality.pdf>
@@ -1644,7 +1641,7 @@ Package pdftex.def Info: fig/Pllhparam_bdt_gamma2_quality.pdf used on input lin
 e 434.
 (pdftex.def)             Requested size: 230.46576pt x 165.24672pt.
 
-<fig/PonSparam_bdt_gamma2_quality.pdf, id=1868, 417.7206pt x 299.45679pt>
+<fig/PonSparam_bdt_gamma2_quality.pdf, id=1893, 417.7206pt x 299.45679pt>
 File: fig/PonSparam_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/PonSparam_bdt_gamma2_quality.pdf>
@@ -1661,61 +1658,69 @@ ty.pdf> <./fig/PonSparam_bdt_gamma2_quality.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/PonSparam_bdt_gamma2_quality.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]) (./subfiles/GRB_Toy_Monte_Carlo/limits/limits.tex [28]
-<fig/cos_zen_prob_dens_bg_IC86_BDT.pdf, id=2026, 867.24pt x 289.08pt>
+<fig/cos_zen_prob_dens_bg_IC86_BDT.pdf, id=2051, 867.24pt x 289.08pt>
 File: fig/cos_zen_prob_dens_bg_IC86_BDT.pdf Graphic file (type pdf)
 
 <use fig/cos_zen_prob_dens_bg_IC86_BDT.pdf>
 Package pdftex.def Info: fig/cos_zen_prob_dens_bg_IC86_BDT.pdf used on input li
-ne 70.
+ne 71.
 (pdftex.def)             Requested size: 435.3303pt x 145.11307pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf, id=2027, 867.24pt x 289.08pt>
+<fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf, id=2052, 867.24pt x 289.08pt>
 File: fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf Graphic file (type pdf)
 
 <use fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf>
 Package pdftex.def Info: fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf used on input
- line 82.
+ line 83.
 (pdftex.def)             Requested size: 435.3303pt x 145.11307pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf, id=2030, 433.62pt x 289.08pt>
+<fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf, id=2055, 433.62pt x 289.08pt>
 File: fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf Graphic file (type pdf)
 
 <use fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf>
 Package pdftex.def Info: fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf used on i
-nput line 112.
+nput line 113.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
-<fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf, id=2031, 433.62pt x 289.08pt>
+<fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf, id=2056, 433.62pt x 289.08pt>
 File: fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf Graphic file (type pdf)
 
 <use fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf>
 Package pdftex.def Info: fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf used on in
-put line 118.
+put line 119.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] <fig/test_statistic.pdf, id=2048, 433.62pt x 289.08pt>
+[29] <fig/test_statistic.pdf, id=2073, 417.7206pt x 303.99748pt>
 File: fig/test_statistic.pdf Graphic file (type pdf)
 
 <use fig/test_statistic.pdf>
-Package pdftex.def Info: fig/test_statistic.pdf used on input line 176.
-(pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
+Package pdftex.def Info: fig/test_statistic.pdf used on input line 173.
+(pdftex.def)             Requested size: 230.46576pt x 167.71864pt.
 
-<fig/test_statistic_cumulative.pdf, id=2051, 433.62pt x 289.08pt>
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 173--173
+[] [] 
+ []
+
+<fig/test_statistic_cumulative.pdf, id=2074, 433.62pt x 289.08pt>
 File: fig/test_statistic_cumulative.pdf Graphic file (type pdf)
 
 <use fig/test_statistic_cumulative.pdf>
 Package pdftex.def Info: fig/test_statistic_cumulative.pdf used on input line 1
-82.
+75.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 175--175
+[] [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1753,27 +1758,48 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/test_statistic_cumulative.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
+\openout2 = `subfiles/Results/Results.aux'.
+
+ (./subfiles/Results/Results.tex
+<fig/limits_wp_allgammas.pdf, id=2338, 417.7206pt x 318.1576pt>
+File: fig/limits_wp_allgammas.pdf Graphic file (type pdf)
+
+<use fig/limits_wp_allgammas.pdf>
+Package pdftex.def Info: fig/limits_wp_allgammas.pdf used on input line 28.
+(pdftex.def)             Requested size: 384.11221pt x 292.55804pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32
+
+
+ <./fig/limits_wp_allgammas.pdf>] [33]) [34]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
- (./main.aux (./subfiles/Introduction/Introduction.aux)
-(./subfiles/OFU/OFU.aux) (./subfiles/scrambling/scrambling.aux)
-(./subfiles/GRB_models/GRB_models.aux)
-(./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux))
+ (./main.aux
+(./subfiles/Introduction/Introduction.aux) (./subfiles/OFU/OFU.aux)
+(./subfiles/scrambling/scrambling.aux) (./subfiles/GRB_models/GRB_models.aux)
+(./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux)
+(./subfiles/Results/Results.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E4DD0E1CD916A67DD91FD4973F2DFDDE;2139.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 990C70B1D3C111AF14DBF3923600E53D;2607
+(rerunfilecheck)             After:  61753A135485D18F8E196BA15A88A43F;2680.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 19221 strings out of 495003
- 357220 string characters out of 6180448
- 481361 words of memory out of 5000000
- 21731 multiletter control sequences out of 15000+600000
+ 19264 strings out of 495003
+ 358065 string characters out of 6180448
+ 482471 words of memory out of 5000000
+ 21752 multiletter control sequences out of 15000+600000
  60591 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,16n,56p,621b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1787,9 +1813,9 @@ yr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 1117521 bytes).
+Output written on main.pdf (34 pages, 1146508 bytes).
 PDF statistics:
- 2376 PDF objects out of 2487 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2510 PDF objects out of 2984 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 
