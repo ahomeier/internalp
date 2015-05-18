@@ -6,8 +6,10 @@ IceCube has been explained. However, the Optical (and X-ray) Follow-Up does not
 trigger on singlets but on multiplets fulfilling several criteria.
 
 Multiplets are a number of neutrinos that arrive within 100 s and 3.5 degrees
-of each other (chapter ???). A test statistic was implemented to select the
-most signal like doublets (chapter ???) to trigger Swift. Once triggered there
+of each other (chapter \ref{sec:OFU_alert_system}). A test statistic was 
+implemented to select the
+most signal like doublets to trigger Swift Follow-Up observations. Once 
+triggered there
 is a chance that a source will not be within the FoV of the XRT. The 
 probabilities for two neutrinos to pass these criteria will be 
 explained in this section.
@@ -15,7 +17,8 @@ explained in this section.
 \subsubsection{Doublet Probabilities}
 
 \paragraph{Probability to detect two neutrinos $P_{2 \nu}$}$\;$\\
-In section ??? the number of expected neutrinos per GRB $\mu$ was calculated. 
+In section \ref{subsubsec:NExp}, the number of expected neutrinos per 
+GRB $\mu$ was calculated. 
 Given this number, the probability to see $N$ neutrinos is given with the 
 Poisson 
 distribution
@@ -40,7 +43,8 @@ neutrinos.
 P$_{\Delta t}$ is the probability that two neutrinos arrive within
 100 seconds, the time window
 specified in the doublet search. 
-It falls exponentially with time if the lightcurve is assumed to be fast rising
+It decreases exponentially with time if the lightcurve is assumed to be fast 
+rising
 with an exponential decay (FRED)
 \begin{equation}
  P(\Delta t) = 1 - e^{\left(-\frac{\Delta t}{\tau} \right)}.
@@ -60,11 +64,11 @@ the focus of this work.
 \paragraph{P$_{3.5^\circ}$}$\;$\\
 The second requirement for each neutrino pair is that they arrive with a
 maximum angular separation of 3.5 degrees. To calculate this probability 
-P$_{3.5^\circ}$ for a given GRB, nugen events need to be
+P$_{3.5^\circ}$ for a given GRB, NuGen events need to be
 selected from within the zenith band (chapter \ref{sec:zenith_bands}) and
 shifted to the GRB direction (chapter \ref{sec:shift2source}). 
 % Each remaining event is paired with all other events, 
-To save on computation time, 4000 of the nugen events are selected randomly
+To save on computation time, 4000 of the NuGen events are selected randomly
 and the angular 
 differences of the
 shifted reconstructed directions are determined for each event combination. The 
@@ -97,7 +101,7 @@ different behavior of the parameterization in different seasons.
 
 The probabilities follow different behaviors in different zenith ranges. Using 
 a 
-hard spectrum with $\gamma=2$ and the nugen dataset of the BDT season, the 
+hard spectrum with $\gamma=2$ and the NuGen dataset of the BDT season, the 
 probability is displayed  vs
 $\theta_\text{GRB}$ in a 2d histogram in Fig. \ref{fig:P3p5param_bdt_gamma2}. A 
 mean probability value is calculated for each $\theta_\text{GRB}$ bin.
@@ -108,7 +112,8 @@ tangent is fitted to the data near the pole ($\cos(\theta_\text{GRB})
 \label{eq:Ptanh}
  P = a \cdot \text{tanh}(b \cdot (\cos(\theta_\text{GRB}- c)) + d
 \end{equation}
-while a simple polynomial function of fifth order is used in the second region
+while a simple polynomial function of the fifth order is used in the second 
+region
 \begin{equation}
 \label{eq:PPoly}
  P = a \cdot \cos^5\theta_\text{GRB} + b \cdot 
@@ -122,7 +127,7 @@ splitting zenith value as an additional data point.
 The quality of the parameterization was examined by creating a second dataset 
 of GRBs. The probability was calculated according to Eq. 
 \ref{eq:P3p5} based on all 
-nugen events within a zenith region around a GRB ($P_{3.5^\circ}^\text{MC}$) 
+NuGen events within a zenith region around a GRB ($P_{3.5^\circ}^\text{MC}$) 
 and parametrized according to the fit to the first 
 dataset ($P_{3.5^\circ}^\text{param}$).
 % to characterize the probability with the most 
@@ -136,7 +141,7 @@ A good agreement between the two procedures is presented in Fig.
 \subfloat[Parametrization (blue line) of the 
 probability $P_{3.5^\circ}$\label{fig:P3p5param_bdt_gamma2}]{%
   \includegraphics[width=0.45\textwidth]{fig/P3p5param_bdt_gamma2.pdf}}
-\subfloat[Testing the quality of the 
+\subfloat[Testing the 
 parameterization with a second 
 dataset.\label{fig:P3p5param_bdt_gamma2_quality}]{%
   \includegraphics[width=0.45\textwidth]{fig/P3p5param_bdt_gamma2_quality.pdf}}
@@ -147,7 +152,7 @@ simulated GRBs, a histogram
 of the ratio between the calculated probabilities based on all events in 
 the zenith bands and the parametrized values is shown (right). The maximum 
 deviation 
-is of about 1\%.}
+is about 1\%.}
 \end{figure}
 
 The second example (IC86-2) demonstrates the difference between the IC86-1/2 
@@ -165,7 +170,7 @@ regions are all fitted with the polynomial function (Eq. \ref{eq:PPoly}) each.
  \subfloat[Parametrization (blue line) of the 
 probability $P_{3.5^\circ}$\label{fig:P3p5param_862_gamma2}]{%
 \includegraphics[width=0.45\textwidth]{fig/P3p5param_862_gamma2.pdf}}
-\subfloat[Testing the quality of the 
+\subfloat[Testing the 
 parameterization with a second 
 dataset.\label{fig:P3p5param_862_gamma2_quality}]{%
  \includegraphics[width=0.45\textwidth]{fig/P3p5param_862_gamma2_quality.pdf}}
@@ -176,7 +181,7 @@ simulated GRBs, a histogram
 of the ratio between the calculated probabilities based on all events in 
 the zenith bands and the parametrized values is shown (right). The maximum 
 deviation 
-is of about 1\%.}
+is about 4\%.}
 \end{figure}
 The quality of the parameterization can be examined in Fig. 
 \ref{fig:P3p5param_862_gamma2_quality}. The overall result is still very 
@@ -194,12 +199,13 @@ parameterization will be used.
 
 The final probability per zenith direction is not dependent on the absolute 
 normalization of the flux as it cancels in equation \ref{eq:P3p5}, but on the 
-chosen OFU cuts and hence the season and the spectrum, defining the amount 
+chosen OFU cuts and the spectral shape. The season and the signal spectrum
+define the amount 
 events of different energies contribute to the calculation. Therefore, the 
 probability is parametrized once per season and spectral index $\gamma$ and is 
 then used for all GRB models. The root-mean-square suffers by about 0.1 - 0.2 
 percentage points in comparison to individual parameterizations per season, 
-$\gamma$ and model and is considered acceptable.
+$\gamma$ and GRB model and is considered acceptable.
 
 The fitted values to the free parameters in Eq. \ref{eq:Ptanh} and 
 \ref{eq:PPoly} as well as the break points between the different regions are 
@@ -298,9 +304,9 @@ then
 \paragraph{P$_{\text{llh}}$}$\;$\\
 On average the doublet selection based on time and direction leads to about 50 -
 60
-doublets per year (depending on season) while only nine alerts can be sent to
+doublets per year (depending on season) while only seven alerts can be sent to
 the Swift telescope. The
-selection of the most signal like doublets is based on the test statistic 
+selection of the most signal like doublets is based on the OFU test statistic 
 \ref{eq:alert-llh}.
 % \begin{align}
 %     \begin{split}
@@ -337,17 +343,16 @@ selection of the most signal like doublets is based on the test statistic
 
 The test statistic is calculated for all event pairs that pass the condition of
 being reconstructed within $3.5^\circ$ (denoted as $| \; \Delta \Psi(i, j) \leq 
-3.5^{\circ}$). The time difference is randomly drawn
+3.5^{\circ}$). They are given a total weight by multiplying the individual 
+event weights.
+The time difference is randomly drawn
 with $\Delta T \in [0, 100]$ s and weighted according to an exponential decay
 (Eq. \ref{eq:lum_vs_time}) introducing a dependency on $t_{90}$
 (Eq. \ref{eq:ToyMC_tau}).
 The probability that
 a GRB doublet will pass the cut $\lambda_\text{cut}$ is determined by taking 
-the ratio of the sum of
-weight
-products from events passing $\lambda_\text{cut}$ and the sum of all doublets 
-passed to this
-function.
+the ratio of the weight sum of doublets passing $\lambda_\text{cut}$ and the 
+weight sum of all considered doublets.
 \begin{equation}
 \label{eq:Pllh}
  P_\text{llh} = \frac{\sum_{i} \sum_{j=i+1} w_i \cdot w_j \; | \; \lambda(i, j)
@@ -409,9 +414,9 @@ $\gamma=2$ is shown in Figure
 GRBs as red dots and a fit to these points as a function of the logarithm of 
 $t_{90}$. The fit is based on Eq. \ref{eq:Ptanh}. Such a fit is done for each 
 bin in $\cos \theta_\text{GRB}$ and for each season - $\gamma$ combination in 
-turn which shall not be displayed here.
+turn. Due to the large number of plots only an example is displayed.
 
-The quality of the parameterization be judged by examining Figure 
+The quality of the parameterization can be judged by examining Figure 
 \ref{fig:Pllhparam_bdt_gamma2_quality}. The parameterization was applied to a 
 second dataset for which the probability was calculated according to 
 \ref{eq:Pllh} for all events within the zenith band. The ratio of calculated 
@@ -446,7 +451,7 @@ is of about 2 percentage points.
 The Optical Follow-Up program calculates the weighted mean direction from all
 events contributing to a multiplet using the Cramer Rao error as weights. For a 
 source to be detectable
-with Swift this
+with Swift, its
 direction must be within 0.5 degrees of the true source direction. The
 probability $P_\text{onS}$ for two events to point back to the source well
 enough is given by
@@ -463,21 +468,21 @@ P_\text{onS} = \frac{\sum_i \sum_{j=i+1} w_i \cdot w_j |
 Only events passing the conditions $\Delta \Psi(i,j) \leq 3.5^\circ$ and 
 $\lambda(i, j) \leq \lambda_\text{cut}$ are considered.
 The parametrization is performed using the methods used and described for 
-$P_\text{llh}$ leading to similar quality as can be judged with help of Figure 
+$P_\text{llh}$ leading to a similar quality as can be judged with the help of 
+Figure 
 \ref{fig:PonSparam_bdt_gamma2_quality}.
 
-\paragraph{Alert Probability}$\;$\\etect a specific 
-GRB. Generating $N_\text{gen} = 5\cdot10^6$ GRBs, the number 
-The probabilities described in this section are conditional and can be 
+\paragraph{Alert Probability}$\;$\\
+The probabilities described in this section until now are conditional and can 
+be 
 combined via multiplication according to the Base Theorem and the probability 
 that two neutrinos are detected, trigger the Swift Follow-Up and that the 
 source is within Swifts FoV is
 \begin{equation}
  P_\text{Alert} = P_{2\nu} \cdot P_D \cdot P_\text{llh} \cdot P_\text{onS}.
 \end{equation}
-$P_\text{onS}$ can be set to one to simply calculate the probability of an 
-alert.
-\newline
+$P_\text{onS}$ can be set to one if only the probability to have a Swift
+alert is of interest.
 
 Given these parameterizations, a big number of usually around five 
 million GRBs are thrown to create a sample representing the complete redshift 
@@ -488,44 +493,46 @@ and luminosity range.
 
 \subsubsection{Probability to Detect a GRB}
 The previous section described a simplified case of only two neutrinos. 
-However, if $\mu$ neutrinos are expected per GRB there is chance to see more 
-than two neutrinos. There are two trigger conditions. Usually, one doublet is 
-detected and passes the swift likelihood cut as well. However, there is the 
+However, if $\mu$ neutrinos are expected per GRB there is a chance to see more 
+than two neutrinos. There are two trigger conditions for a Swift alert. 
+Usually, one doublet is 
+detected and passes the Swift cut on the OFU test statistic as 
+well. However, there is the 
 possibility of a 'higher multiplet' as well which we define as an alert of at 
 least three neutrinos.
 
 In both cases the number of possible 
-doublets and the probability of them to be detected needs to be calculated.
-
-If $n$ neutrinos are detected, the first neutrino can be part of a doublet with 
-$n-1$ partner, while the second neutrino can combine with $n-2$ partners. The 
+doublets and the probability of them to be detected needs to be calculated. If 
+$N$ neutrinos are detected, the first neutrino can be part of a doublet with 
+$N-1$ partners, while the second neutrino can combine with $N-2$ partners. The 
 general formula describing the number of possible combinations is the Gaussian 
 Sum Formula
 \begin{equation}
  d = 1 + 2 + ... + (x-1) + x= \frac{x^2 + x}{2}.
 \end{equation}
-Two neutrinos are needed to form a doublet, leading to the substitution $n = 
+Two neutrinos are needed to form a doublet, leading to the substitution $N = 
 x-1$. The number of possible doublets is then 
 \begin{equation}
- d = \frac{n^2 - n}{2}.
+ d = \frac{N^2 - N}{2}.
 \end{equation}
 with each doublet having a probability $P_D$ to pass the time window and 
 angular separation cuts. The probability for this to happen $k$ out of $d$ 
-times is given by binomial distribution
+times is given by the binomial distribution
 \begin{equation}
- P_\text{bin} ( k, d(n), P_D) =  \binom{d}{k} \cdot P_{D}^k \cdot 
-(1 - P_{D})^{d-k} = \binom{0.5 (n^2 - n)}{k} \cdot P_{D}^k \cdot 
-(1 - P_{D})^{0.5(n^2 -n) -k}
+ P_\text{bin} ( k, d(N), P_D) =  \binom{d}{k} \cdot P_{D}^k \cdot 
+(1 - P_{D})^{d-k} = \binom{0.5 (N^2 - N)}{k} \cdot P_{D}^k \cdot 
+(1 - P_{D})^{0.5(N^2 -N) -k}
 \end{equation}
 
-The correct probability to see exactly one doublet to 
-multiply the probability to see $n$ neutrinos and the probability of these $n$ 
-neutrinos to form exactly one doublet for all $n \geq 2$
+The correct probability to see exactly one doublet to is determined by 
+multiplying the probability to see $N$ neutrinos and the probability of these 
+$N$ 
+neutrinos to form exactly one doublet for all $N \geq 2$
 \begin{equation}
- P_\text{1 Doublet} = \sum_{n=2}^{n_\text{max}} P_\text{Poisson}(n, 
-\mu) \cdot P_\text{bin} (1, d(n), P_D)
+ P_\text{1 Doublet} = \sum_{N=2}^{N_\text{max}} P_\text{Poisson}(N, 
+\mu) \cdot P_\text{bin} (1, d(N), P_D)
 \end{equation}
-$n_\text{max}$ is chosen to achieve a precision in the order of $10^{-6}$.
+$N_\text{max}$ is chosen to achieve a precision in the order of $10^{-6}$.
 The probability that one doublet passes the likelihood cut as well is given by
 \begin{equation}
  P_\text{1 Swift Doublet} = P_\text{1 Doublet} \cdot P_\text{llh}
@@ -546,20 +553,14 @@ in a specific channel is the sum over all probabilities, e.g. for higher
 multiplets
 \begin{equation}
  N_\text{GRB} / yr = \sum_{i=0}^{N_\text{gen}} P_{\text{multiplet},i} \cdot 
-\frac{N_\text{GRB, yr}}{N_\text{gen}}
+\frac{N_\text{GRB, yr}}{N_\text{GRB, gen}}
 \end{equation}
-The ratio at the end is to renormalize the result to the expected number of 
+The ratio at the end is necessary to renormalize the result to the expected 
+number of 
 GRBs per year $N_\text{GRB, yr}$.
 
 This concludes the description of the Toy Monte Carlo to calculate the expected 
 number of expected signal alerts for different spectra and GRB models. The 
-following sections describe the background expectations and the combination of 
-both to calculate a test statistic. It will be used to draw limits on the 
+following section describes how to use the background and signal expectations 
+ to calculate a test statistic. It will be used to draw limits on the 
 contribution of transients to the HESE flux.
-
-
-
-
-\begin{itemize}
- \item 
-\end{itemize}

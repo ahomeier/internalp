@@ -10,7 +10,8 @@
 % \end{itemize}
 The luminosity is drawn according to the luminosity function fitted to
 gamma-ray data, assuming the neutrino luminosity function to follow the
-same shape. However, a normalization factor might be needed to trim it to the
+same shape. However, a normalization factor might be needed to restrict it to 
+the
 correct energies and consequently to the correct number of neutrinos to produce
 the HESE flux. ($N_\text{exp}^\nu \propto \hat{E}_{\nu, \text{total}} \propto
 L_\text{Peak}$). Equation \ref{eq:Nexp_wZB} evolves to
@@ -48,13 +49,14 @@ constant $\Upsilon$. However, a different $\epsilon^*$ needs to be determined
 for different $\hat{E}_{min}$. The impact of choosing different minimal
 energies is studied in chapter ???.
 
-There are two ways to determine $\epsilon$ - a Monte Carlo based and a semi
-analytic one.
+There are two ways to determine $\epsilon$ - a Monte Carlo based method and a 
+semi-analytic one.
+
 \subsubsection{$\epsilon^*$ - Monte Carlo Based}
 This approach was followed by Nora Strotjohann. Given the different
 spectra fitted to the HESE flux (chapter \ref{sec:GRBSpectra}), a different
-number of neutrinos per year are expected due to GRBs. Using the nugen
-simulation without the GRB simulation one can simply calculate the number of
+number of neutrinos per year are expected due to GRBs. Using the NuGen
+simulation without the GRB simulation, one can simply calculate the number of
 neutrinos using the spectra fitted at earth. They are displayed in figure
 \ref{fig:Espectra}. Their shape is quite similar at high energies at which the
 HESE events were found. However, the curves diverge quite significantly at
@@ -143,8 +145,8 @@ dL_\text{Peak}}{\int_{L_\text{Peak}^{min}}^{L_\text{Peak}^{max}}\frac{
 
 
 The co-moving rate density $R(z)$ includes a normalization to the number of
-expected GRBs according to said model. If a different number of GRBs is
-assumed, then the resulting flux needs to be adjusted by an according factor.
+expected GRBs according to the used model. If a different number of GRBs is
+assumed, then the resulting flux needs to be adjusted by an appropriate factor.
 
 This flux of all GRBs up to a redshift of eight needs to reproduce the HESE
 flux over the whole energy range (Fig. \ref{fig:Phi_norm}). This can be
@@ -172,14 +174,15 @@ semi-analytic approach.
  \captionsetup{width=.9\textwidth}
 \subfloat[$\hat{E}_{min}$ was set to 1.\label{fig:Phi_norm}]{%
  \includegraphics[width=0.45\textwidth]{fig/Phi_norm_gamm2.pdf}}
-\subfloat[$\hat{E}_{min}$ was set to $10$ 
+\subfloat[$\hat{E}_{min}$ was set to $100$ 
 TeV.\label{fig:Phi_norm_Emin}]{\includegraphics[width=0.45\textwidth]{%
-fig/Phi_norm_gamm2_Emin.pdf}}
+fig/norm_g2p3_emin100TeV.pdf}}
  \caption{Upper plot: The differential flux in energy for the HESE spectrum
-($E^{-2}$ with cut-off) and the spectrum produced by all GRBs up to a redshift
+($E^{-2}$ with cut-off on the left and $E^{-2/3}$ on the right) and the 
+spectrum produced by all GRBs up to a redshift
 of 8. \\
 Lower plot: ratio between the GRB flux and the HESE flux. The ratio should be
-queal to one.}
+equal to one.}
 \end{figure}
 % emin plot with Emin=10000???
 
@@ -193,14 +196,17 @@ stringent the energy cut is (Eq. \ref{eq:Etotal}) leading to a smaller
 efficiency factor $\epsilon$ as the flux at each energy needs to
 reproduce the HESE flux. The effective efficiency factor $\epsilon^*$ will stay
 the same.
-Using the example of $\hat{E}_{min} = 10 \text{ TeV}$ shown in figure
-\ref{fig:Phi_norm_Emin}, $\epsilon^*$ was chosen such that an agreement was
-found for as large an energy range as possible. Considering all energies (Fig.
-\ref{fig:Phi_norm}) $\epsilon^*=0.149$ was determined while applying a minimal
-energy leads to  $\epsilon^*=0.151$. The discrepancy of about 1.5 \%  is
-probably due to the precision of agreement between the two fluxes required in
-the procedure. \textbf{can i do better? I think that I did. checkout 
-$emin_redon.ipynb$}
+Using the example of $\hat{E}_{min} = 100 \text{ TeV}$ shown in figure
+\ref{fig:Phi_norm_Emin}, $\epsilon^*=0.92$ was chosen to reach an agreement
+for as large an energy range as possible.  
+
+% Considering all energies (Fig.
+% \ref{fig:Phi_norm}) $\epsilon^*=0.149$ was determined while applying a minimal
+% energy leads to  $\epsilon^*=0.151$. The discrepancy of about 1.5 \%  is
+% probably due to the precision of agreement between the two fluxes required in
+% the procedure. 
+% \textbf{can i do better? I think that I did. checkout 
+% $emin_redon.ipynb$}
 
 The other effect can be seen at low energies at which the GRB flux drops to
 zero. No events with energies
@@ -212,6 +218,9 @@ applied. The GRB flux transitions from an agreement with the HESE flux towards
 no flux at all because the cut effects are redshift dependent. Neutrinos 
 with higher
 energies are more effected the  closer to earth a GRB is assumed to be.
+The value $\hat{E}_{min}$ was 
+chosen to create a cut-off at earth at low energies reproducing approximately 
+the lowest measured energy of an HESE event of 30 TeV (black line).
 
 In summary, the effect of a different $\hat{E}_{min}$ on the final flux per
 energy is non existent. However, events will be lost at lower energies. 

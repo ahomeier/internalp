@@ -8,17 +8,20 @@ location) to trigger Follow-Up observations with various telescopes including
 the XRT on board the Swift satellite. The latency of such triggers is about 
 three minutes on average. The X-ray Follow-Up (XFU) is a subsystem of the 
 Optical Follow-Up (OFU).
-\subsection{Alert system}
 
-Triggered events are reconstructed at Pole and evaluated at various levels. 
+\subsection{Alert System}
+\label{sec:OFU_alert_system}
+
+Triggered events are reconstructed at the Pole and evaluated at various levels. 
 They are first roughly classified as possible muons by the Muon Filter 
 ($\sim$40 Hz). Stricter cuts are applied on the OnlineL2Filter, to filter 
 out badly reconstructed events achieving a rate of about 5 Hz. The lower rate 
-allows for further more detailed reconstructions which are then used for the 
+allows for further, more detailed reconstructions which are then used for the 
 OFU filter. 
 
 The OFU filter is applied to select well reconstructed muon neutrino events 
-from the northern sky. Depending on the season a purity of up to 90\% was 
+from the northern sky. Depending on the season a purity of atmospheric 
+neutrinos of up to 90\% was 
 achieved. The filter was improved season to season though the OFU seasons do 
 not match the IceCube seasons. In the first year with the full detector 
 configuration (IC86-1), the OFU system was shut down for several month as the 
@@ -61,8 +64,8 @@ and LDir (MPE) \geq 280 )& \; \;or \; \;(MuE (MPE) \geq 1e6))
 The $Zenith_{Split}$ values refer to the 
 zenith values derived from the topological and time splitter of the events. MPE 
 and MuonLLh refer to the different fit types used to extract the parameters. 
-The cut scheme was completely reworked  for IC86-BDT to use a BDT cut 
-(reference ???). 
+The cut scheme was completely reworked  for IC86-BDT to use a BDT cut.
+% (reference ???). 
 
 The single neutrino events passing these cuts are further analyzed to search 
 for multiplets with multiplets consisting of at least two events arriving 
@@ -76,7 +79,8 @@ year are expected to be generated purely from the background of atmospheric
 neutrinos while the background of higher multiplets (triplets, quadruplets) is 
 negligible in the order of once every 15 to 20 years. As observation time with 
 the Swift satellite is precious, it was agreed to send only the seven most 
-signal like doublets per year. The evaluation is based on the OFU test 
+promising doublets looking like a signal per year. The evaluation is based on 
+the OFU test 
 statistic (OFUtst)
 \begin{align}
     \begin{split}
@@ -98,7 +102,9 @@ reconstruction errors $\sigma_1$ and $\sigma_2$ of the two neutrino events.
 $\theta_A$ corresponds to the (circularized) angular radius of the field
 of view (FoV) of the follow-up telescope (set to $0.5^\circ$ for Swift). A cut 
 value $\lambda_\text{cut}$ was chosen each season to filter out the best nine 
-alerts (Table \ref{tab:llh cut values}). Statistically, two more alerts will be 
+alerts (Table \ref{tab:llh cut values}). The value change with the IC86-BDT 
+season as a higher singlet rate was allowed resulting in more doublets per 
+year. Statistically, two more alerts will be 
 lost because Swift can't observe about 80\% of the sky due to the moon and the 
 sun.
 
@@ -130,5 +136,6 @@ more background contaminated than the OFU events. The less stringent cuts and
 the different condition for the angular difference yield the desired test alert 
 rate of about one test alert every ten minutes and prevent test alerts to be 
 alerts as well. A lack of test alerts indicates problems with either the 
-IceCube detector itself, our alert system or the communication processes and an 
+IceCube detector itself, our alert system, or the communication processes and 
+an 
 alarm is raised after a two hour signal silence.

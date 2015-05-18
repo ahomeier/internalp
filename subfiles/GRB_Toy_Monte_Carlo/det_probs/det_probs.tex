@@ -6,8 +6,10 @@ IceCube has been explained. However, the Optical (and X-ray) Follow-Up does not
 trigger on singlets but on multiplets fulfilling several criteria.
 
 Multiplets are a number of neutrinos that arrive within 100 s and 3.5 degrees
-of each other (chapter ???). A test statistic was implemented to select the
-most signal like doublets (chapter ???) to trigger Swift. Once triggered there
+of each other (chapter \ref{sec:OFU_alert_system}). A test statistic was 
+implemented to select the
+most signal like doublets to trigger Swift Follow-Up observations. Once 
+triggered there
 is a chance that a source will not be within the FoV of the XRT. The 
 probabilities for two neutrinos to pass these criteria will be 
 explained in this section.
@@ -15,7 +17,8 @@ explained in this section.
 \subsubsection{Doublet Probabilities}
 
 \paragraph{Probability to detect two neutrinos $P_{2 \nu}$}$\;$\\
-In section ??? the number of expected neutrinos per GRB $\mu$ was calculated. 
+In section \ref{subsubsec:NExp}, the number of expected neutrinos per 
+GRB $\mu$ was calculated. 
 Given this number, the probability to see $N$ neutrinos is given with the 
 Poisson 
 distribution
@@ -40,7 +43,8 @@ neutrinos.
 P$_{\Delta t}$ is the probability that two neutrinos arrive within
 100 seconds, the time window
 specified in the doublet search. 
-It falls exponentially with time if the lightcurve is assumed to be fast rising
+It decreases exponentially with time if the lightcurve is assumed to be fast 
+rising
 with an exponential decay (FRED)
 \begin{equation}
  P(\Delta t) = 1 - e^{\left(-\frac{\Delta t}{\tau} \right)}.
@@ -60,11 +64,11 @@ the focus of this work.
 \paragraph{P$_{3.5^\circ}$}$\;$\\
 The second requirement for each neutrino pair is that they arrive with a
 maximum angular separation of 3.5 degrees. To calculate this probability 
-P$_{3.5^\circ}$ for a given GRB, nugen events need to be
+P$_{3.5^\circ}$ for a given GRB, NuGen events need to be
 selected from within the zenith band (chapter \ref{sec:zenith_bands}) and
 shifted to the GRB direction (chapter \ref{sec:shift2source}). 
 % Each remaining event is paired with all other events, 
-To save on computation time, 4000 of the nugen events are selected randomly
+To save on computation time, 4000 of the NuGen events are selected randomly
 and the angular 
 differences of the
 shifted reconstructed directions are determined for each event combination. The 
@@ -97,7 +101,7 @@ different behavior of the parameterization in different seasons.
 
 The probabilities follow different behaviors in different zenith ranges. Using 
 a 
-hard spectrum with $\gamma=2$ and the nugen dataset of the BDT season, the 
+hard spectrum with $\gamma=2$ and the NuGen dataset of the BDT season, the 
 probability is displayed  vs
 $\theta_\text{GRB}$ in a 2d histogram in Fig. \ref{fig:P3p5param_bdt_gamma2}. A 
 mean probability value is calculated for each $\theta_\text{GRB}$ bin.
@@ -108,7 +112,8 @@ tangent is fitted to the data near the pole ($\cos(\theta_\text{GRB})
 \label{eq:Ptanh}
  P = a \cdot \text{tanh}(b \cdot (\cos(\theta_\text{GRB}- c)) + d
 \end{equation}
-while a simple polynomial function of fifth order is used in the second region
+while a simple polynomial function of the fifth order is used in the second 
+region
 \begin{equation}
 \label{eq:PPoly}
  P = a \cdot \cos^5\theta_\text{GRB} + b \cdot 
@@ -122,7 +127,7 @@ splitting zenith value as an additional data point.
 The quality of the parameterization was examined by creating a second dataset 
 of GRBs. The probability was calculated according to Eq. 
 \ref{eq:P3p5} based on all 
-nugen events within a zenith region around a GRB ($P_{3.5^\circ}^\text{MC}$) 
+NuGen events within a zenith region around a GRB ($P_{3.5^\circ}^\text{MC}$) 
 and parametrized according to the fit to the first 
 dataset ($P_{3.5^\circ}^\text{param}$).
 % to characterize the probability with the most 
@@ -136,7 +141,7 @@ A good agreement between the two procedures is presented in Fig.
 \subfloat[Parametrization (blue line) of the 
 probability $P_{3.5^\circ}$\label{fig:P3p5param_bdt_gamma2}]{%
   \includegraphics[width=0.45\textwidth]{fig/P3p5param_bdt_gamma2.pdf}}
-\subfloat[Testing the quality of the 
+\subfloat[Testing the 
 parameterization with a second 
 dataset.\label{fig:P3p5param_bdt_gamma2_quality}]{%
   \includegraphics[width=0.45\textwidth]{fig/P3p5param_bdt_gamma2_quality.pdf}}
@@ -147,7 +152,7 @@ simulated GRBs, a histogram
 of the ratio between the calculated probabilities based on all events in 
 the zenith bands and the parametrized values is shown (right). The maximum 
 deviation 
-is of about 1\%.}
+is about 1\%.}
 \end{figure}
 
 The second example (IC86-2) demonstrates the difference between the IC86-1/2 
@@ -165,7 +170,7 @@ regions are all fitted with the polynomial function (Eq. \ref{eq:PPoly}) each.
  \subfloat[Parametrization (blue line) of the 
 probability $P_{3.5^\circ}$\label{fig:P3p5param_862_gamma2}]{%
 \includegraphics[width=0.45\textwidth]{fig/P3p5param_862_gamma2.pdf}}
-\subfloat[Testing the quality of the 
+\subfloat[Testing the 
 parameterization with a second 
 dataset.\label{fig:P3p5param_862_gamma2_quality}]{%
  \includegraphics[width=0.45\textwidth]{fig/P3p5param_862_gamma2_quality.pdf}}
@@ -176,7 +181,7 @@ simulated GRBs, a histogram
 of the ratio between the calculated probabilities based on all events in 
 the zenith bands and the parametrized values is shown (right). The maximum 
 deviation 
-is of about 1\%.}
+is about 4\%.}
 \end{figure}
 The quality of the parameterization can be examined in Fig. 
 \ref{fig:P3p5param_862_gamma2_quality}. The overall result is still very 
@@ -338,17 +343,16 @@ selection of the most signal like doublets is based on the OFU test statistic
 
 The test statistic is calculated for all event pairs that pass the condition of
 being reconstructed within $3.5^\circ$ (denoted as $| \; \Delta \Psi(i, j) \leq 
-3.5^{\circ}$). The time difference is randomly drawn
+3.5^{\circ}$). They are given a total weight by multiplying the individual 
+event weights.
+The time difference is randomly drawn
 with $\Delta T \in [0, 100]$ s and weighted according to an exponential decay
 (Eq. \ref{eq:lum_vs_time}) introducing a dependency on $t_{90}$
 (Eq. \ref{eq:ToyMC_tau}).
 The probability that
 a GRB doublet will pass the cut $\lambda_\text{cut}$ is determined by taking 
-the ratio of the sum of
-weight
-products from events passing $\lambda_\text{cut}$ and the sum of all doublets 
-passed to this
-function.
+the ratio of the weight sum of doublets passing $\lambda_\text{cut}$ and the 
+weight sum of all considered doublets.
 \begin{equation}
 \label{eq:Pllh}
  P_\text{llh} = \frac{\sum_{i} \sum_{j=i+1} w_i \cdot w_j \; | \; \lambda(i, j)
@@ -392,7 +396,7 @@ parameterization representing various GRBs per bin and $t_{90}$ value.
 
 \begin{figure}[h]
  \centering
- \captionsetup{width=0.6\textwidth}
+ \captionsetup{width=0.85\textwidth}
 \includegraphics[width=0.6\textwidth]{fig/Pllh_example_g2_bdt.pdf}
 
 \caption{The probability for a doublet to pass 
@@ -424,22 +428,18 @@ percentage points are satisfactory small.
 %where do they lie??? which GRBs???
 \begin{figure}[h]
 \centering
- \captionsetup{width=.4\textwidth}
+ \captionsetup{width=.85\textwidth}
 %  \captionsetup{margin=0pt}
-\subfloat[Season IC86-BDT: Using a second set of simulated GRBs, a histogram 
-of the ratio between the calculated probabilities to pass the likelihood cut 
-based on all events in 
-the zenith bands and the parametrized values is shown. The maximum deviation 
-is of about 2 percentage points.\label{fig:Pllhparam_bdt_gamma2_quality}]{%
+\subfloat[Probability to pass 
+likelihood cut.\label{fig:Pllhparam_bdt_gamma2_quality}]{%
  \includegraphics[width=0.45\textwidth]{fig/Pllhparam_bdt_gamma2_quality.pdf}}
- \subfloat[Season IC86-BDT: Using a second set of simulated GRBs, a histogram 
-of the ratio between the calculated probabilities for a source to be in the FoV 
-of Swift 
-based on all events in 
-the zenith bands and the parametrized values is shown. The maximum deviation 
-is of about 2 percentage points. 
+ \subfloat[Probability for a GRB to be within Swift FoV. 
 \label{fig:PonSparam_bdt_gamma2_quality}]{%
 \includegraphics[width=0.45\textwidth]{fig/PonSparam_bdt_gamma2_quality.pdf}}
+\caption{Season IC86-BDT: Using a second set of simulated GRBs, a histogram 
+of the ratio between the calculated probabilities and the parametrized values 
+is shown. The maximum deviation 
+is of about 2 percentage points.}
 \end{figure}
 
 
@@ -447,7 +447,7 @@ is of about 2 percentage points.
 The Optical Follow-Up program calculates the weighted mean direction from all
 events contributing to a multiplet using the Cramer Rao error as weights. For a 
 source to be detectable
-with Swift this
+with Swift, its
 direction must be within 0.5 degrees of the true source direction. The
 probability $P_\text{onS}$ for two events to point back to the source well
 enough is given by
@@ -542,7 +542,7 @@ result in at least two doublets.
 d(n), P_D)]
 \end{equation}
 
-These definitions enable us to calculate the probability to detect a specific 
+These definitions can be used to calculate the probability to detect a specific 
 GRB. Generating $N_\text{gen} = 5\cdot10^6$ GRBs, the number of GRBs that are 
 expected to be detected
 in a specific channel is the sum over all probabilities, e.g. for higher 

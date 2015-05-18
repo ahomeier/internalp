@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: subfiles/Introduction/Introduction.aux
+A level-1 auxiliary file: subfiles/OFU/OFU.aux
+A level-1 auxiliary file: subfiles/scrambling/scrambling.aux
+A level-1 auxiliary file: subfiles/GRB_models/GRB_models.aux
+A level-1 auxiliary file: subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux
+A level-1 auxiliary file: subfiles/Results/Results.aux
+The style file: plain.bst
+Database file #1: references.bib
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            534 strings with 4755 characters,
+and the built_in function-call counts, 1379 in all, are:
+= -- 130
+> -- 67
+< -- 0
++ -- 26
+- -- 22
+* -- 115
+:= -- 241
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 23
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 44
+empty$ -- 105
+format.name$ -- 22
+if$ -- 278
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 19
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 98
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 12
+width$ -- 5
+write$ -- 46

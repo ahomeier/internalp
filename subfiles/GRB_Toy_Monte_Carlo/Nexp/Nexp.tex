@@ -1,6 +1,7 @@
 \subsection{Number of expected Neutrinos based on NuGen Datasets}
-The simulation uses nugen datasets to calculate the number of expected
-neutrinos according to the standard formula (cite ???).
+The simulation uses NuGen datasets to calculate the number of expected
+neutrinos according to the standard formula.
+%  (cite ???).
 \begin{equation}
 \label{eq:Nexp_general}
  N_\text{exp}^\nu = \sum_i\frac{dF_P(E_i)}{dE_i} \cdot
@@ -241,15 +242,17 @@ describes the probability for each simulated event $i$ to reach the detector,
 interact within its effective volume and to be detected ($OneWeight_i$), the
 individual energy $E_i$, the number of generated MC neutrino events
 $N_\text{generated}$ and a re-weighting factor $\frac{A_{ZB}}{4 \pi}$. The
-re-weighting factor has been explained in more detail in section ???. 
+re-weighting factor has been explained in more detail in section  
+\ref{sec:zenith_bands}.
 
 Furthermore, the number of expected neutrinos is dependent on the redshift of
 the GRB, the total emitted energy in neutrinos $\hat{E}_{\nu, \text{total}}$ -
 and thus $\hat{L}_\text{Peak}$ and $\hat{t}_{90}$ - as well as the constant
 $\Upsilon$. The constant itself is dependent on the energy of the cut-off
 $\hat{E}_\text{cut}$ and the minimal neutrino energy at source $\hat{E}_{min}$.
-As described in ??? the cut-off energy will be optimized to reproduce the
+As described in \ref{sec:GRBSpectra}
+the cut-off energy will be optimized to reproduce the
 observed cut-off or set to very high values depending on the spectrum that is
-used (see ???). The effect of the minimal energy can be either absorbed into
-the normalization to the HESE flux (chapter \ref{sec:norm2HESE}) or specific
-cases and their impact can be studied (chapter ???).
+used. The effect of the minimal energy can be absorbed into
+the normalization to the HESE flux (chapter \ref{sec:norm2HESE}). The complete 
+impact is studied in chapter \ref{sec:Results}.

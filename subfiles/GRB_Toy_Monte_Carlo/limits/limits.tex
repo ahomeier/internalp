@@ -16,10 +16,12 @@ of detected multiplets in comparison to the expected background
 average can indicate a possible signal contribution. 
 
 Given the average 
-background expectation (Section ???) $\mu_{k,b}$ for multiplets with 
-multiplicity $k$, the probability to see $N_k$ or more alerts during one 
+background expectation 
+ $\mu_{k,b}$ for multiplets with 
+multiplicity $k$ (Table \ref{tab:scrambling_results}), the probability to see 
+$N_k$ or more alerts during one 
 season is
-\begin{equation}
+\begin{equation} 
  P(N_k, \mu_k) = \sum P_\text{Poisson} = \sum_{i=N_k}^\infty 
 \frac{\mu_k^i}{i!}\exp^{-\mu_k}.
 \end{equation}
@@ -37,8 +39,8 @@ P(N_k^i,
 The second component is only valid for doublets as higher multiplicities are 
 automatically considered true alerts. The OFU system generates up to about 50 
 doublets per year of which only seven can be sent to Swift. The down selection 
-is based on the OFU test statistic (Section ???) separating the more signal 
-like and the more background like doublets. For each doublet an OFU test 
+is based on the OFU test statistic (Eq. \ref{eq:alert-llh}) separating the more 
+signal like and the more background like doublets. For each doublet an OFU test 
 statistic value is drawn and compared to the background distribution to 
 calculate the p-value $p_{j, i}^{ofu}$. The p-values of all doublets can not 
 simply be multiplied as the number of doublets would influence the significance 
@@ -48,8 +50,7 @@ of all $p_{j,i}^{ofu}$ was chosen to keep the total contribution in the same
 order of magnitude independent of the number of doublets.
 %order as the contributions of the amount of multiplets per multiplicities and 
 %season $P(N_k^i, \mu_{k,b}^i)$ by multiplying i
-All $p_{j,i}^{ofu}$ are multiplied and 
-the ${N_2^i}^{th}$ square root is taken of the product with $N_2^i$ being the 
+The geometric mean is calculated of all $p_{j,i}^{ofu}$ with $N_2^i$ being the 
 number of considered 
 doublets of season $i$
 \begin{equation}
@@ -59,35 +60,53 @@ doublets of season $i$
 Calculating $p_{j,i}^{ofu}$ is based on several steps. The OFU test statistic 
 distribution differs slightly for different zenith regions. To evaluate the 
 correct test 
-statistic a zenith value is drawn for each doublet according to the squared 
-singlet rate (Figure \ref{fig:cos_zen_prob_dens_bg_IC86_BDT}, 
-\ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}). 
+statistic a zenith value is drawn for each doublet according to the the correct 
+cosinus distribution for Swift doublets. For background, these distributions 
+are generated for each season when scrambling the data (Fig 
+\ref{fig:cos_zen_prob_dens_bg_IC86_BDT_correct}). The signal distributions are 
+highly dependent on signal strength and spectrum shape as high energy neutrinos 
+are less likely to pass through the earth. Therefore, a distribution is 
+generated for each season - spectrum - signal strength combination. One example 
+can be seen in Figure \ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05}.
+% squared 
+% singlet rate (Figure \ref{fig:cos_zen_prob_dens_bg_IC86_BDT}, 
+% \ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}). 
 
 \begin{figure}[h]
 \centering
  \captionsetup{width=.85\textwidth}
 %  \captionsetup{margin=0pt}
-\includegraphics[width=0.85\textwidth]{%
-fig/cos_zen_prob_dens_bg_IC86_BDT.pdf}
- \caption{The plots show the cosinus zenith distribution for background of the 
-IC86-BDT season. The left plot depicts the singlet rate in random units and the 
-right plot is the probability density function of the doublet distribution 
-(singletrate squared)}
+\subfloat[Background distribution for 
+IC86-BDT\label{fig:cos_zen_prob_dens_bg_IC86_BDT_correct}]{%
+\includegraphics[width=0.45\textwidth]{%
+fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf}}
+\subfloat[Signal distribution for 
+IC86-BDT\label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05}]{%
+\includegraphics[width=0.45\textwidth]{%
+fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf}}
+ \caption{The plots show the cosinus zenith distribution of Swift doublets for 
+background of the 
+IC86-BDT season and for a signal distribution of the BDT season with a 
+spectrum with $\gamma=2.3$ and one specific signal expectation.}
+% . The left plot depicts the singlet rate in random 
+% units and the 
+% right plot is the probability density function of the doublet distribution 
+% (singletrate squared)}
 \label{fig:cos_zen_prob_dens_bg_IC86_BDT}
 \end{figure}
 
-\begin{figure}[h]
-\centering
- \captionsetup{width=.85\textwidth}
-\includegraphics[width=0.85\textwidth]{%
-fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf}
-\caption{The plots show the cosinus zenith distribution for signal with a 
-spectral index of $\gamma=2.3$ of the 
-IC86-BDT season. The left plot depicts the singlet rate in random units and the 
-right plot is the probability density function of the doublet distribution 
-(singletrate squared)}
-\label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+%  \captionsetup{width=.85\textwidth}
+% \includegraphics[width=0.85\textwidth]{%
+% fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf}
+% \caption{The plots show the cosinus zenith distribution for signal with a 
+% spectral index of $\gamma=2.3$ of the 
+% IC86-BDT season. The left plot depicts the singlet rate in random units and the 
+% right plot is the probability density function of the doublet distribution 
+% (singletrate squared)}
+% \label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}
+% \end{figure}
 The northern sky was divided 
 into twenty even regions in $\cos(\theta)$ and the probability density 
 functions of the OFU test statistic were created for background and signal of 
@@ -103,20 +122,20 @@ then compared to the cumulative background distribution (Figure
 
 \begin{figure}[h]
 \centering
- \captionsetup{width=.4\textwidth}
+ \captionsetup{width=.95\textwidth}
 %  \captionsetup{margin=0pt}
- \subfloat[The probability density functions of the OFU test statistic 
-(background and signal with a spectral index of $\gamma=2.3$) for the first 
-region starting from the pole for the IC86-BDT season. 
+ \subfloat[The probability density functions
 \label{fig:ofu_teststat_zone00_IC86_BDT_bg_g2p3}]{%
 \includegraphics[width=0.45\textwidth]{%
 fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf}}
-\subfloat[The cumulative 
-distribution of the background 
-OFU test statistic for the 
-IC86-BDT season.\label{fig:ofu_teststat_zone00_IC86_BDT_bg_cum}]{%
+\subfloat[Cumulative 
+distribution of background 
+.\label{fig:ofu_teststat_zone00_IC86_BDT_bg_cum}]{%
 \includegraphics[width=0.45\textwidth]{%
 fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf}}
+\caption{The OFU test statistic 
+(background and signal with a spectral index of $\gamma=2.3$) for the first 
+region starting from the pole for the IC86-BDT season.}
 \end{figure}
 
 The complete test statistic is the combination of both components
@@ -157,8 +176,8 @@ p_{j,i,b}^{ofu} \cdot \prod_{j=1}^{N_{2,s}^i}
 p_{j,i,s}^{ofu}}
 \end{equation}
 
-Again, $10^6$ experiments are performed per season and GRB 
-model and the test statistic (Eq. \ref{eq:lam_total})
+$10^6$ experiments are performed per season and GRB 
+model as well and the test statistic (Eq. \ref{eq:lam_total})
 % $\lambda\left(N_{k,s+b}^i, \mu_{k,b}^i \right)$
 evaluated. A model can be ruled 
 out at 90\% confidence level if 90\% of the experiments show a worse agreement 

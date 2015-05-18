@@ -1,14 +1,27 @@
-\subsection{Number of expected Neutrinos}
-The simulation uses nugen datasets to calculate the number of expected
-neutrinos according to the standard formula
+\subsection{Number of expected Neutrinos based on NuGen Datasets}
+The simulation uses NuGen datasets to calculate the number of expected
+neutrinos according to the standard formula.
+%  (cite ???).
 \begin{equation}
- N_\text{exp} = \sum_i\frac{dF_P(E_i)}{dE} \cdot
+\label{eq:Nexp_general}
+ N_\text{exp}^\nu = \sum_i\frac{dF_P(E_i)}{dE_i} \cdot
 \frac{OneWeight_i}{N_\text{generated}}
 \end{equation}
+The nugen simulation describes the probability for each simulated neutrino event
+$i$ to reach the detector,
+interact within its effective volume and to be detected ($OneWeight_i$), the
+individual energy $E_i$ and the number of generated MC neutrino events
+$N_\text{generated}$.
+
+%  and a re-weighting factor $\frac{A_{ZB}}{4 \pi}$. The
+% re-weighting factor will be explained in more detail in section ???. 
 The differential particle fluence $\frac{dF_P}{dE}$ at earth needs to be
-calculated based on the GRB properties drawn at source (peak luminosity
-$\hat{L}_\text{Peak}$, $\hat{t}_{90, S}$, redshift). They are marked with a
-hat.
+calculated based on the GRB properties drawn at source - peak luminosity
+$\hat{L}_\text{Peak}$, $\hat{t}_{90, S}$, redshift (sections \ref{sec:Etotal} -
+\ref{sec:FatEarth}). Values at source are marked with a
+hat while values on earth are represented by the appropriate characters 
+themselves.
+
 
 \input{subfiles/GRB_Toy_Monte_Carlo/Nexp/zenith_bands}
 \input{subfiles/GRB_Toy_Monte_Carlo/Nexp/shift2source}
@@ -18,17 +31,25 @@ hat.
 
 \subsubsection{Total Emitted Energy as Source $\hat{E}_{\nu, \text{total}}$}
 \label{sec:Etotal}
-The peak luminosity and the 90\% time window can be used to calculate the
-total energy output of the GRB in neutrinos if the light curve is known. In
+So far, the steps dealing with simulation effects and neutrino directions have
+been described. To calculate $N_\text{exp}^\nu$ the differential particle
+fluence in energy at earth needs to be calculated as well, based on parameters
+that are drawn as part of the simulation (chapter \ref{sec:drawnProp}). A first
+step is to calculate the total emitted energy in neutrinos at the source
+$\hat{E}_{\nu, \text{total}}$.
+
+The peak luminosity and the 90\% time window can be used if the light curve is
+known. In
 this work a fast rise and rapid decay (FRED) light curve with an instant jump
 to the peak luminosity and an exponential decay afterwards is assumed. 
 
 %comment about test if this is folded into normalization?
 
-The luminosity at a given time is defined as 
+The luminosity at a given time $\hat{t}$ is defined as 
 \begin{equation}
  \hat{L}(\hat{t}) = \hat{L}_{\text{Peak}} \cdot e^{\left(-
 \frac{\hat{t}}{\hat{\tau}}\right)}
+\label{eq:lum_vs_time}
 \end{equation}
 The total energy is the time integral over the time dependent luminosity
 distribution
@@ -36,7 +57,7 @@ distribution
 \label{eq:Eiso}
 \begin{align}
  \hat{E}_{\nu, \text{total}} & =  \int_0^{\infty} \hat{L}(\hat{t}) d\hat{t} 
-	  =  L_{\text{Peak}} \int_0^{\infty} e^{-\frac{t}{\tau}} dt\\
+	  =  \hat{L}_{\text{Peak}} \int_0^{\infty} e^{-\frac{t}{\tau}} dt\\
 	 & = - \hat{\tau} \cdot \hat{L}_{\text{Peak}} \left[
 e^{-\frac{\hat{t}}{\hat{\tau}}}
 \right]_0^{\infty}
@@ -46,7 +67,7 @@ e^{-\frac{\hat{t}}{\hat{\tau}}}
 The final shape of the distribution depends on the unknown $\tau$ which needs to
 be replaced by a known quantity such as the 90 \% time window
 $\hat{t}_{90}$ in which 90\% or $\hat{E}_{\nu, 90}=0.9 \cdot \hat{E}_{\nu,
-\text{total}}$ were
+\text{total}}$ are
 observed. 
 The amount of energy radiated within this time can be determined with
 \begin{equation}
@@ -94,13 +115,15 @@ section \ref{sec:Etotal} the total emitted energy was calculated. It equals the
 integral over $\hat{E} \cdot \frac{d\hat{F}_P}{d\hat{E}}$.
 
 \begin{equation}
+\label{eq:Etotal}
  \hat{E}_{\nu, \text{total}} = \int_{\hat{E}_{min}}^\infty \hat{E} \hat{F}_0
 \hat{E}^{-\gamma} \text{exp} \left(  -
 \frac{\hat{E}}{\hat{E}_\text{cut}}\right) d\hat{E} = \hat{F}_0
 \Upsilon \left(\hat{E}_{min}, \hat{E}_\text{cut}\right)
 \end{equation}
-The result depends on two GRB parameters which are chosen equally
-in for all GRBs: A minimal energy of the neutrinos $\hat{E}_{min}$ and the
+The result depends on two GRB parameters which are chosen equally as physics 
+parameters
+for all GRBs: A minimal energy of the neutrinos $\hat{E}_{min}$ and the
 break energy $\hat{E}_{cut}$. Once, these parameters are chosen, $\Upsilon$ is
 a constant for all GRBs and the differential particle fluence in energy at
 source can be written as
@@ -115,6 +138,7 @@ d_0^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
 %  The impact 
 
 \subsubsection{Fluence at Earth}
+\label{sec:FatEarth}
 Having derived the fluence at source, cosmological effects need to be taken
 into account when calculating the fluence at earth. The energy and time
 at source relate to the values at earth with $\hat{E} = (1 + z) E$ and 
@@ -202,7 +226,7 @@ number of expected neutrinos is  given with
 
 \begin{equation}
 \begin{align}
- N_\text{exp} & = \sum_i\frac{dF_P(E_i)}{dE} \cdot
+ N_\text{exp}^\nu & = \sum_i\frac{dF_P(E_i)}{dE} \cdot
 \frac{OneWeight_i}{N_\text{generated} \cdot A_{ZB}} \\
 &= \sum_i \cdot \frac{\hat{E}_{\nu, \text{total}}}{4 \pi
 d_l^2\Upsilon\left(\hat{E}_{min}, \hat{E}_\text{cut}\right)} \cdot
@@ -218,15 +242,17 @@ describes the probability for each simulated event $i$ to reach the detector,
 interact within its effective volume and to be detected ($OneWeight_i$), the
 individual energy $E_i$, the number of generated MC neutrino events
 $N_\text{generated}$ and a re-weighting factor $\frac{A_{ZB}}{4 \pi}$. The
-re-weighting factor will be explained in more detail in section ???. 
+re-weighting factor has been explained in more detail in section  
+\ref{sec:zenith_bands}.
 
-Furthermore, the number of expected neutrino is dependent on the redshift of
+Furthermore, the number of expected neutrinos is dependent on the redshift of
 the GRB, the total emitted energy in neutrinos $\hat{E}_{\nu, \text{total}}$ -
 and thus $\hat{L}_\text{Peak}$ and $\hat{t}_{90}$ - as well as the constant
 $\Upsilon$. The constant itself is dependent on the energy of the cut-off
 $\hat{E}_\text{cut}$ and the minimal neutrino energy at source $\hat{E}_{min}$.
-As described in ??? the cut-off energy will be optimized to reproduce the
+As described in \ref{sec:GRBSpectra}
+the cut-off energy will be optimized to reproduce the
 observed cut-off or set to very high values depending on the spectrum that is
-used (see ???). The effect of the minimal energy can be either absorbed into
-the normalization to the HESE flux (chapter ???) or specific cases and their
-impact can be studied (chapter ???).
+used. The effect of the minimal energy can be either absorbed into
+the normalization to the HESE flux (chapter \ref{sec:norm2HESE}) or in specific
+cases and their impact can be studied (chapter \ref{sec:Results}).

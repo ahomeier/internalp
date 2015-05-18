@@ -1,9 +1,13 @@
+\newpage
 \section{Significance and Limit calculation}
+\label{sec:limits}
 This 
-section will describe the test statistic to evaluate if the measured alerts are 
-background conform or can be attributed to a signal source.
+section will describe the test statistic to evaluate the conformity with 
+background of the measured alerts.
+% if the measured alerts are 
+% background conform or can be attributed to a signal source.
 The test statistic is based on multiplying the p-values of different 
-components. They can be separated into two categories, the pure number of 
+components which can be separated into two categories: the pure number of 
 alerts and the probability that doublets stem from background.
 
 The Optical Follow-Up was designed with the expectation that most of the alerts 
@@ -50,47 +54,66 @@ number of considered
 doublets of season $i$
 \begin{equation}
 \label{eq:lambda_ofu}
- \lambda_\test{ofu} = \prod_i \sqrt[N_2^i]{\prod_{j=1}^{N_2^i} p_{j,i}^{ofu}}
+ \lambda_\text{ofu} = \prod_i \sqrt[N_2^i]{\prod_{j=1}^{N_2^i} p_{j,i}^{ofu}}
 \end{equation}
-Calculating $p_{j,i}$ is based on several steps. The OFU test statistic 
-distribution differs for different zenith regions. To evaluate the correct test 
-statistic a zenith value is drawn for each doublet according to the squared 
-singlet rate (Figure \ref{fig:cos_zen_prob_dens_bg_IC86_BDT}, 
-\ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}). 
+Calculating $p_{j,i}^{ofu}$ is based on several steps. The OFU test statistic 
+distribution differs slightly for different zenith regions. To evaluate the 
+correct test 
+statistic a zenith value is drawn for each doublet according to the the correct 
+cosinus distribution for Swift doublets. For background, these distributions 
+are generated for each season when scrambling the data (Fig 
+\ref{fig:cos_zen_prob_dens_bg_IC86_BDT_correct}). The signal distributions are 
+highly dependent on signal strength and spectrum shape as high energy neutrinos 
+are less likely to pass through the earth. Therefore, a distribution is 
+generated for each season - spectrum - signal strength combination. One example 
+can be seen in Figure \ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05}.
+% squared 
+% singlet rate (Figure \ref{fig:cos_zen_prob_dens_bg_IC86_BDT}, 
+% \ref{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}). 
 
 \begin{figure}[h]
 \centering
  \captionsetup{width=.85\textwidth}
 %  \captionsetup{margin=0pt}
-\includegraphics[width=0.85\textwidth]{%
-fig/cos_zen_prob_dens_bg_IC86_BDT.pdf}
- \caption{The plots show the cosinus zenith distribution for background of the 
-IC86-BDT season. The left plot depicts the singlet rate in random units and the 
-right plot is the probability density function of the doublet distribution 
-(singletrate squared)}
+\subfloat[Background distribution for 
+IC86-BDT\label{fig:cos_zen_prob_dens_bg_IC86_BDT_correct}]{%
+\includegraphics[width=0.45\textwidth]{%
+fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf}}
+\subfloat[Signal distribution for 
+IC86-BDT\label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05}]{%
+\includegraphics[width=0.45\textwidth]{%
+fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf}}
+ \caption{The plots show the cosinus zenith distribution of Swift doublets for 
+background of the 
+IC86-BDT season and for a signal distribution of the BDT season with a 
+spectrum with $\gamma=2.3$ and one specific signal expectation.}
+% . The left plot depicts the singlet rate in random 
+% units and the 
+% right plot is the probability density function of the doublet distribution 
+% (singletrate squared)}
 \label{fig:cos_zen_prob_dens_bg_IC86_BDT}
 \end{figure}
 
-\begin{figure}[h]
-\centering
- \captionsetup{width=.85\textwidth}
-\includegraphics[width=0.85\textwidth]{%
-fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf}
-\caption{The plots show the cosinus zenith distribution for signal with a 
-spectral index of $\gamma=2.3$ of the 
-IC86-BDT season. The left plot depicts the singlet rate in random units and the 
-right plot is the probability density function of the doublet distribution 
-(singletrate squared)}
-\label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+%  \captionsetup{width=.85\textwidth}
+% \includegraphics[width=0.85\textwidth]{%
+% fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf}
+% \caption{The plots show the cosinus zenith distribution for signal with a 
+% spectral index of $\gamma=2.3$ of the 
+% IC86-BDT season. The left plot depicts the singlet rate in random units and the 
+% right plot is the probability density function of the doublet distribution 
+% (singletrate squared)}
+% \label{fig:cos_zen_prob_dens_sg2p3_IC86_BDT}
+% \end{figure}
 The northern sky was divided 
 into twenty even regions in $\cos(\theta)$ and the probability density 
 functions of the OFU test statistic were created for background and signal of 
 all considered spectra for all seasons in each region. An example is shown 
 in Figure \ref{fig:ofu_teststat_zone00_IC86_BDT_bg_g2p3} for the first zone 
 from the pole for the IC86-BDT season. Using the zenith value the correct OFU 
-test statistic probability density function is chosen to draw a value of the 
-statistic. As the probability to have a Swift doublet is already included in 
+test statistic probability density function is chosen to draw a test statistic 
+value. As the probability to have a Swift doublet is already included in 
 calculating the expected number of doublets $\mu_{2}^i$, the test statistic 
 value must be smaller than the Swift cut of the season. The chosen value is 
 then compared to the cumulative background distribution (Figure 
@@ -100,9 +123,7 @@ then compared to the cumulative background distribution (Figure
 \centering
  \captionsetup{width=.4\textwidth}
 %  \captionsetup{margin=0pt}
- \subfloat[The probability density functions of the OFU test statistic 
-(background and signal with a spectral index of $\gamma=2.3$) for the first 
-region starting from the pole for the IC86-BDT season. 
+ \subfloat[ 
 \label{fig:ofu_teststat_zone00_IC86_BDT_bg_g2p3}]{%
 \includegraphics[width=0.45\textwidth]{%
 fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf}}
@@ -112,6 +133,9 @@ OFU test statistic for the
 IC86-BDT season.\label{fig:ofu_teststat_zone00_IC86_BDT_bg_cum}]{%
 \includegraphics[width=0.45\textwidth]{%
 fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf}}
+\caption{The probability density functions of the OFU test statistic 
+(background and signal with a spectral index of $\gamma=2.3$) for the first 
+region starting from the pole for the IC86-BDT season.}
 \end{figure}
 
 The complete test statistic is the combination of both components
@@ -124,33 +148,35 @@ The complete test statistic is the combination of both components
 The final significance and limit calculation is based on running pseudo 
 experiments. To evaluate the 
 agreement of the measured alerts with a pure background hypothesis, the average 
-background expectation 
-per season and multiplicity $\mu_{k, b}^i$ is used to draw a number of 
-detected multiplets $N_k^i$ according to a Poisson distribution per experiment. 
+background expectation $\mu_{k, b}^i$
+per season $i$ and multiplicity $k$  is used to draw a number of 
+detected multiplets $N_k^i$ according to a Poisson distribution. 
 For all $N_2^i$ doublets, $p_{j,i}^{ofu}$ is calculated. 
 In total, 
-$10^6$ experiments are performed per season and multiplicity and the resulting 
+$10^6$ experiments are performed per season and the resulting 
  test statistic values are compared to the measured result ($\lambda_m$). The 
 p-value is the fraction of experiments with worse agreement to the background 
 hypothesis ($\lambda < \lambda_m$).
 
 
 Similarly, a signal hypothesis can be tested. The GRB Toy Monte Carlo is used 
-to estimate the average number of expected multiplets $\mu_{k,s}^i$ for a 
-specific model and $N_{k,s}^i$ values are again generated according to the 
-Poisson  distribution. The number of alerts $N_{k,s+b}^i$ is then
+to estimate the average number of expected multiplets $\mu_{k,s, \gamma}^i$ for 
+a 
+specific model and $N_{k,s, \gamma}^i$ values are again generated according to 
+the 
+Poisson  distribution. The number of alerts $N_{k,s+b}^i$ is the
 combination of background and signal alerts
 \begin{equation}
  N_{k,s+b}^i = N_{k,s}^i + N_{k,b}^i.
 \end{equation}
-The influence of the OFU test statistic (Eq. \ref{eq:lambda_ofu}) is then
+The influence of the OFU test statistic (Eq. \ref{eq:lambda_ofu}) is 
 \begin{equation}
  \lambda_\text{ofu} = \prod_i \sqrt[N_{2,s+b}^i]{\prod_{j=1}^{N_{2,b}^i} 
 p_{j,i,b}^{ofu} \cdot \prod_{j=1}^{N_{2,s}^i}
 p_{j,i,s}^{ofu}}
 \end{equation}
 
-$10^6$ experiments are performed per season and multiplicities and GRB 
+Again, $10^6$ experiments are performed per season and GRB 
 model and the test statistic (Eq. \ref{eq:lam_total})
 % $\lambda\left(N_{k,s+b}^i, \mu_{k,b}^i \right)$
 evaluated. A model can be ruled 
@@ -160,20 +186,18 @@ An example is shown in Figures \ref{fig:test_statistic} and
 \ref{fig:test_statistic_cumulative}.
 \begin{figure}[h]
 \centering
- \captionsetup{width=.4\textwidth}
+ \captionsetup{width=.9\textwidth}
 %  \captionsetup{margin=0pt}
-\subfloat[$10^6$ experiments were thrown and the 
+\subfloat[Differential distribution\label{fig:test_statistic}]{%
+ \includegraphics[width=0.45\textwidth]{fig/test_statistic.pdf}}
+ \subfloat[cumulative distribution\label{fig:test_statistic_cumulative}]{%
+\includegraphics[width=0.45\textwidth]{fig/test_statistic_cumulative.pdf}}
+\caption{$10^6$ experiments were thrown and the 
 test statistic $\lambda$ was calculated according 
 to equation \ref{eq:test_statistic}. In read is the differential
 distribution of the Monte Carlo experiments while 
-the black line represents the detected value.\label{fig:test_statistic}]{%
- \includegraphics[width=0.45\textwidth]{fig/test_statistic.pdf}}
- \subfloat[In read is the cumulative
-distribution of the Monte Carlo experiments while 
 the black line represents the detected value. About 90\% of the experiments 
-have a worse agreement with the background only hypothesis.
-\label{fig:test_statistic_cumulative}]{%
-\includegraphics[width=0.45\textwidth]{fig/test_statistic_cumulative.pdf}}
+have a worse agreement with the background only hypothesis.}
 \end{figure}
 
 % % in thesis write abortion of quadruplets in bg//????

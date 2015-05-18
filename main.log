@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.27)  11 MAY 2015 11:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.27)  18 MAY 2015 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,26 +967,41 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 (./subfiles/Introduction/Introduction.aux) (./subfiles/OFU/OFU.aux)
 (./subfiles/scrambling/scrambling.aux) (./subfiles/GRB_models/GRB_models.aux)
 (./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux)
-(./subfiles/Results/Results.aux))
+(./subfiles/Results/Results.aux)
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 54.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1011,7 +1026,7 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks37
 )
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 53.
+Package hyperref Info: Link coloring OFF on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1020,9 +1035,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1064,36 +1079,36 @@ LaTeX Info: Redefining \nameref on input line 53.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 56
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 56
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 56
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 56
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1122,7 +1137,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \end{align}
+l.61 \end{align}
                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1134,7 +1149,7 @@ If that doesn't work, type  X <return>  to quit.
 \openout2 = `subfiles/scrambling/scrambling.aux'.
 
  (./subfiles/scrambling/scrambling.tex
-<fig/scrambling_illustration.pdf, id=189, 796.9775pt x 597.23125pt>
+<fig/scrambling_illustration.pdf, id=193, 796.9775pt x 597.23125pt>
 File: fig/scrambling_illustration.pdf Graphic file (type pdf)
 
 <use fig/scrambling_illustration.pdf>
@@ -1149,25 +1164,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./fig/scrambling_illustration.pdf>]
-<fig/swift_scrambling.pdf, id=219, 417.7206pt x 335.8763pt>
+<fig/swift_scrambling.pdf, id=223, 417.7206pt x 335.8763pt>
 File: fig/swift_scrambling.pdf Graphic file (type pdf)
 
 <use fig/swift_scrambling.pdf>
-Package pdftex.def Info: fig/swift_scrambling.pdf used on input line 106.
+Package pdftex.def Info: fig/swift_scrambling.pdf used on input line 108.
 (pdftex.def)             Requested size: 230.46576pt x 185.30653pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 106--106
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 108--108
 [] [] 
  []
 
-<fig/swift_scrambling_cum.pdf, id=220, 417.7206pt x 327.92657pt>
+<fig/swift_scrambling_cum.pdf, id=224, 417.7206pt x 327.92657pt>
 File: fig/swift_scrambling_cum.pdf Graphic file (type pdf)
 
 <use fig/swift_scrambling_cum.pdf>
-Package pdftex.def Info: fig/swift_scrambling_cum.pdf used on input line 109.
+Package pdftex.def Info: fig/swift_scrambling_cum.pdf used on input line 111.
 (pdftex.def)             Requested size: 230.46576pt x 180.92058pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 109--109
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 111--111
 [] [] 
  []
 
@@ -1179,16 +1194,16 @@ clusion: multiple pdfs with page group included in a single page
 \openout2 = `subfiles/GRB_models/GRB_models.aux'.
 
  (./subfiles/GRB_models/GRB_models.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
 
 (./subfiles/GRB_models/WandermanPiran/WandermanPiran.tex
-<fig/RGRB_WP.pdf, id=316, 433.62pt x 289.08pt>
+<fig/RGRB_WP.pdf, id=322, 433.62pt x 289.08pt>
 File: fig/RGRB_WP.pdf Graphic file (type pdf)
  <use fig/RGRB_WP.pdf>
 Package pdftex.def Info: fig/RGRB_WP.pdf used on input line 36.
@@ -1198,7 +1213,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 36--36
 [] [] 
  []
 
-<fig/Rz_WP.pdf, id=317, 433.62pt x 289.08pt>
+<fig/Rz_WP.pdf, id=323, 433.62pt x 289.08pt>
 File: fig/Rz_WP.pdf Graphic file (type pdf)
  <use fig/Rz_WP.pdf>
 Package pdftex.def Info: fig/Rz_WP.pdf used on input line 38.
@@ -1211,7 +1226,7 @@ Overfull \hbox (115.2329pt too wide) in paragraph at lines 38--38
 [7
 
 
-] <fig/Lpeak_wp.pdf, id=332, 433.62pt x 289.08pt>
+] <fig/Lpeak_wp.pdf, id=339, 433.62pt x 289.08pt>
 File: fig/Lpeak_wp.pdf Graphic file (type pdf)
  <use fig/Lpeak_wp.pdf>
 Package pdftex.def Info: fig/Lpeak_wp.pdf used on input line 64.
@@ -1229,39 +1244,45 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/Lpeak_wp.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <fig/grb_models_lum_comp_L45.pdf, id=454, 433.62pt x 289.08pt>
+>] <fig/grb_models_lum_comp_L45.pdf, id=463, 433.62pt x 289.08pt>
 File: fig/grb_models_lum_comp_L45.pdf Graphic file (type pdf)
 
 <use fig/grb_models_lum_comp_L45.pdf>
-Package pdftex.def Info: fig/grb_models_lum_comp_L45.pdf used on input line 52.
+Package pdftex.def Info: fig/grb_models_lum_comp_L45.pdf used on input line 53.
 
 (pdftex.def)             Requested size: 245.82962pt x 163.88628pt.
 
-<fig/grb_models_redshift_comp.pdf, id=455, 433.62pt x 289.08pt>
+<fig/grb_models_redshift_comp.pdf, id=464, 433.62pt x 289.08pt>
 File: fig/grb_models_redshift_comp.pdf Graphic file (type pdf)
 
 <use fig/grb_models_redshift_comp.pdf>
-Package pdftex.def Info: fig/grb_models_redshift_comp.pdf used on input line 55
+Package pdftex.def Info: fig/grb_models_redshift_comp.pdf used on input line 56
 .
 (pdftex.def)             Requested size: 245.82962pt x 163.88628pt.
 ) [9 <./fig/grb_models_lum_comp_L45.pdf> <./fig/grb_models_redshift_comp.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/grb_models_redshift_comp.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] <fig/Lpeak_wp_SN.pdf, id=548, 417.7206pt x 326.11827pt>
+>] <fig/Lpeak_wp_SN.pdf, id=560, 417.7206pt x 326.11827pt>
 File: fig/Lpeak_wp_SN.pdf Graphic file (type pdf)
 
 <use fig/Lpeak_wp_SN.pdf>
-Package pdftex.def Info: fig/Lpeak_wp_SN.pdf used on input line 94.
+Package pdftex.def Info: fig/Lpeak_wp_SN.pdf used on input line 99.
 (pdftex.def)             Requested size: 332.89412pt x 259.88979pt.
  (./subfiles/GRB_models/t90/t90.tex
-<fig/t90earth.pdf, id=549, 417.7206pt x 327.42204pt>
+<fig/t90earth.pdf, id=561, 417.7206pt x 327.42204pt>
 File: fig/t90earth.pdf Graphic file (type pdf)
  <use fig/t90earth.pdf>
 Package pdftex.def Info: fig/t90earth.pdf used on input line 5.
 (pdftex.def)             Requested size: 348.258pt x 272.97426pt.
-
-[10 <./fig/Lpeak_wp_SN.pdf>])) [11 <./fig/t90earth.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+))
+[10 <./fig/Lpeak_wp_SN.pdf>] [11 <./fig/t90earth.pdf>]
 \openout2 = `subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux'.
 
 
@@ -1272,126 +1293,24 @@ Package pdftex.def Info: fig/t90earth.pdf used on input line 5.
 
 ]) (./subfiles/GRB_Toy_Monte_Carlo/Nexp/Nexp.tex
 (./subfiles/GRB_Toy_Monte_Carlo/Nexp/zenith_bands.tex)
-(./subfiles/GRB_Toy_Monte_Carlo/Nexp/shift2source.tex [13]
-
-! Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19  \end{align}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59  \end{align}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67  \end{align}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89  \end{align}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[14]
-
-! Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114  \end{align}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<fig/shift2source_true_minus_shifted_error.pdf, id=707, 433.62pt x 289.08pt>
-File: fig/shift2source_true_minus_shifted_error.pdf Graphic file (type pdf)
-
-<use fig/shift2source_true_minus_shifted_error.pdf>
-Package pdftex.def Info: fig/shift2source_true_minus_shifted_error.pdf used on 
-input line 129.
-(pdftex.def)             Requested size: 512.14963pt x 341.47313pt.
-
-<fig/shift2source_zendependency.pdf, id=708, 433.62pt x 289.08pt>
-File: fig/shift2source_zendependency.pdf Graphic file (type pdf)
-
-<use fig/shift2source_zendependency.pdf>
-Package pdftex.def Info: fig/shift2source_zendependency.pdf used on input line 
-141.
-(pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
-
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 141--141
-[] [] 
- []
-
-<fig/shift2source_azidependency.pdf, id=709, 433.62pt x 289.08pt>
-File: fig/shift2source_azidependency.pdf Graphic file (type pdf)
-
-<use fig/shift2source_azidependency.pdf>
-Package pdftex.def Info: fig/shift2source_azidependency.pdf used on input line 
-144.
-(pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
-
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 144--144
-[] [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
+(./subfiles/GRB_Toy_Monte_Carlo/Nexp/shift2source.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 31.
+(hyperref)                removing `math shift' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 31.
+(hyperref)                removing `subscript' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nu' on input line 31.
+(hyperref)                removing `\nu' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 31.
+(hyperref)                removing `math shift' on input line 32.
 
-[15 <./fig/shift2source_true_minus_shifted_error.pdf>]
+[13]
 
 ! Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
@@ -1400,7 +1319,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \end{align}
+l.65 \end{align}
                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1413,7 +1332,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81  \end{align}
+l.82  \end{align}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1426,17 +1345,12 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91  \end{align}
+l.92  \end{align}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[16 <./fig/shift2source_zendependency.pdf> <./fig/shift2source_azidependency.pd
-f
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/shift2source_azidependency.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->] [17]
+[14] [15]
 
 ! Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
@@ -1445,50 +1359,50 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 \end{align}
+l.237 \end{align}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) (./subfiles/GRB_Toy_Monte_Carlo/normalization/normalization.tex [18]
+) (./subfiles/GRB_Toy_Monte_Carlo/normalization/normalization.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 53.
+(hyperref)                removing `math shift' on input line 55.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 53.
+(hyperref)                removing `\epsilon' on input line 55.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `superscript' on input line 55.
 
-<fig/Spectra_on_OFU.pdf, id=919, 867.24pt x 578.16pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 55.
+
+<fig/Spectra_on_OFU.pdf, id=747, 867.24pt x 578.16pt>
 File: fig/Spectra_on_OFU.pdf Graphic file (type pdf)
 
 <use fig/Spectra_on_OFU.pdf>
-Package pdftex.def Info: fig/Spectra_on_OFU.pdf used on input line 67.
+Package pdftex.def Info: fig/Spectra_on_OFU.pdf used on input line 69.
 (pdftex.def)             Requested size: 348.258pt x 232.16856pt.
- [19 <./fig/Spectra_on_OFU.pdf>]
+ [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 94.
+(hyperref)                removing `math shift' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 94.
+(hyperref)                removing `\epsilon' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `superscript' on input line 96.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 96.
 
 
 ! Package amsmath Error: Erroneous nesting of equation structures;
@@ -1498,262 +1412,264 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \end{align}
+l.141 \end{align}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-Overfull \hbox (6.84544pt too wide) in paragraph at lines 162--165
+[17 <./fig/Spectra_on_OFU.pdf>]
+Overfull \hbox (6.84544pt too wide) in paragraph at lines 164--167
 \OT1/ptm/m/n/12 The ef-fec-tive ef-fi-ciency fac-tor can be ap-plied in the fur
--ther sim-u-la-tion to each GRB us-ing equa-tion []5.39[]. 
+-ther sim-u-la-tion to each GRB us-ing equa-tion []5.28[]. 
  []
 
-<fig/Phi_norm_gamm2.pdf, id=997, 417.7206pt x 314.24098pt>
+<fig/Phi_norm_gamm2.pdf, id=831, 417.7206pt x 314.24098pt>
 File: fig/Phi_norm_gamm2.pdf Graphic file (type pdf)
 
 <use fig/Phi_norm_gamm2.pdf>
-Package pdftex.def Info: fig/Phi_norm_gamm2.pdf used on input line 174.
+Package pdftex.def Info: fig/Phi_norm_gamm2.pdf used on input line 176.
 (pdftex.def)             Requested size: 230.46576pt x 173.3701pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 174.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 174.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 174.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 174--174
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 176--176
 [] [] 
  []
 
-<fig/Phi_norm_gamm2_Emin.pdf, id=998, 417.7206pt x 314.24098pt>
-File: fig/Phi_norm_gamm2_Emin.pdf Graphic file (type pdf)
+<fig/norm_g2p3_emin100TeV.pdf, id=832, 417.7206pt x 308.53844pt>
+File: fig/norm_g2p3_emin100TeV.pdf Graphic file (type pdf)
 
-<use fig/Phi_norm_gamm2_Emin.pdf>
-Package pdftex.def Info: fig/Phi_norm_gamm2_Emin.pdf used on input line 177.
-(pdftex.def)             Requested size: 230.46576pt x 173.3701pt.
+<use fig/norm_g2p3_emin100TeV.pdf>
+Package pdftex.def Info: fig/norm_g2p3_emin100TeV.pdf used on input line 179.
+(pdftex.def)             Requested size: 230.46576pt x 170.22394pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 177--177
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 179--179
 [] [] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 188.
+(hyperref)                removing `subscript' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 188.
+(hyperref)                removing `math shift' on input line 191.
 
+[18 <./fig/Phi_norm_gamm2.pdf> <./fig/norm_g2p3_emin100TeV.pdf
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 188.
-
-[20]) (./subfiles/GRB_Toy_Monte_Carlo/det_probs/det_probs.tex [21 <./fig/Phi_no
-rm_gamm2.pdf> <./fig/Phi_norm_gamm2_Emin.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/Phi_norm_gamm2_Emin.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
->] [22] <fig/P3p5param_bdt_gamma2.pdf, id=1163, 433.62pt x 289.08pt>
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/norm_g2p3_emin100TeV.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]) (./subfiles/GRB_Toy_Monte_Carlo/det_probs/det_probs.tex [19]
+<fig/P3p5param_bdt_gamma2.pdf, id=990, 433.62pt x 289.08pt>
 File: fig/P3p5param_bdt_gamma2.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_bdt_gamma2.pdf>
-Package pdftex.def Info: fig/P3p5param_bdt_gamma2.pdf used on input line 138.
+Package pdftex.def Info: fig/P3p5param_bdt_gamma2.pdf used on input line 143.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 138--138
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 143--143
 [] [] 
  []
 
-<fig/P3p5param_bdt_gamma2_quality.pdf, id=1164, 417.7206pt x 299.517pt>
+<fig/P3p5param_bdt_gamma2_quality.pdf, id=991, 417.7206pt x 299.517pt>
 File: fig/P3p5param_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_bdt_gamma2_quality.pdf>
 Package pdftex.def Info: fig/P3p5param_bdt_gamma2_quality.pdf used on input lin
-e 142.
+e 147.
 (pdftex.def)             Requested size: 230.46576pt x 165.24672pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 142--142
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 147--147
 [] [] 
  []
 
-<fig/P3p5param_862_gamma2.pdf, id=1168, 433.62pt x 289.08pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/P3p5param_862_gamma2.pdf, id=995, 433.62pt x 289.08pt>
 File: fig/P3p5param_862_gamma2.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_862_gamma2.pdf>
-Package pdftex.def Info: fig/P3p5param_862_gamma2.pdf used on input line 167.
+Package pdftex.def Info: fig/P3p5param_862_gamma2.pdf used on input line 172.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 167--167
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 172--172
 [] [] 
  []
 
-<fig/P3p5param_862_gamma2_quality.pdf, id=1169, 417.7206pt x 299.517pt>
+<fig/P3p5param_862_gamma2_quality.pdf, id=996, 417.7206pt x 299.517pt>
 File: fig/P3p5param_862_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/P3p5param_862_gamma2_quality.pdf>
 Package pdftex.def Info: fig/P3p5param_862_gamma2_quality.pdf used on input lin
-e 171.
+e 176.
 (pdftex.def)             Requested size: 230.46576pt x 165.24672pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 171--171
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 176--176
 [] [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (15.00879pt too wide) in paragraph at lines 211--270
+[20]
+Overfull \hbox (15.00879pt too wide) in paragraph at lines 216--275
  [][] 
  []
 
-[23 <./fig/P3p5param_bdt_gamma2.pdf> <./fig/P3p5param_bdt_gamma2_quality.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_bdt_gamma2_quality.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/Pllh_example_g2_bdt.pdf, id=1530, 433.62pt x 289.08pt>
+[21 <./fig/P3p5param_bdt_gamma2.pdf> <./fig/P3p5param_bdt_gamma2_quality.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_bdt_gamma2_quality.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>] <fig/Pllh_example_g2_bdt.pdf, id=1370, 433.62pt x 289.08pt>
 File: fig/Pllh_example_g2_bdt.pdf Graphic file (type pdf)
 
 <use fig/Pllh_example_g2_bdt.pdf>
-Package pdftex.def Info: fig/Pllh_example_g2_bdt.pdf used on input line 396.
+Package pdftex.def Info: fig/Pllh_example_g2_bdt.pdf used on input line 400.
 (pdftex.def)             Requested size: 307.2929pt x 204.87329pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./fig/P3p5param_862_gamma2.pdf> <./fig/P3p5param_862_gamma2_quality.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_862_gamma2_quality.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->] <fig/Pllhparam_bdt_gamma2_quality.pdf, id=1892, 417.7206pt x 299.517pt>
+<fig/Pllhparam_bdt_gamma2_quality.pdf, id=1379, 417.7206pt x 299.517pt>
 File: fig/Pllhparam_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/Pllhparam_bdt_gamma2_quality.pdf>
 Package pdftex.def Info: fig/Pllhparam_bdt_gamma2_quality.pdf used on input lin
-e 434.
+e 435.
 (pdftex.def)             Requested size: 230.46576pt x 165.24672pt.
 
-<fig/PonSparam_bdt_gamma2_quality.pdf, id=1893, 417.7206pt x 299.45679pt>
+Overfull \hbox (102.43228pt too wide) in paragraph at lines 435--435
+[] [] 
+ []
+
+<fig/PonSparam_bdt_gamma2_quality.pdf, id=1380, 417.7206pt x 299.45679pt>
 File: fig/PonSparam_bdt_gamma2_quality.pdf Graphic file (type pdf)
 
 <use fig/PonSparam_bdt_gamma2_quality.pdf>
 Package pdftex.def Info: fig/PonSparam_bdt_gamma2_quality.pdf used on input lin
-e 442.
+e 438.
 (pdftex.def)             Requested size: 230.46576pt x 165.2135pt.
+
+Overfull \hbox (102.43228pt too wide) in paragraph at lines 438--438
+[] [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26 <./fig/Pllh_example_g2_bdt.pdf>] [27 <./fig/Pllhparam_bdt_gamma2_quali
-ty.pdf> <./fig/PonSparam_bdt_gamma2_quality.pdf
+[22 <./fig/P3p5param_862_gamma2.pdf> <./fig/P3p5param_862_gamma2_quality.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/P3p5param_862_gamma2_quality.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>] [23] [24 <./fig/Pllh_example_g2_bdt.pdf>])
+(./subfiles/GRB_Toy_Monte_Carlo/limits/limits.tex [25 <./fig/Pllhparam_bdt_gamm
+a2_quality.pdf> <./fig/PonSparam_bdt_gamma2_quality.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/PonSparam_bdt_gamma2_quality.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->]) (./subfiles/GRB_Toy_Monte_Carlo/limits/limits.tex [28]
-<fig/cos_zen_prob_dens_bg_IC86_BDT.pdf, id=2051, 867.24pt x 289.08pt>
-File: fig/cos_zen_prob_dens_bg_IC86_BDT.pdf Graphic file (type pdf)
+>]
+<fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf, id=1885, 433.62pt x 289.08pt>
+File: fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf Graphic file (type pdf)
 
-<use fig/cos_zen_prob_dens_bg_IC86_BDT.pdf>
-Package pdftex.def Info: fig/cos_zen_prob_dens_bg_IC86_BDT.pdf used on input li
-ne 71.
-(pdftex.def)             Requested size: 435.3303pt x 145.11307pt.
+<use fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf>
+Package pdftex.def Info: fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf used on 
+input line 82.
+(pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
+
+Overfull \hbox (102.43228pt too wide) in paragraph at lines 82--82
+[] [] 
+ []
+
+
+<fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf, id=1886, 578.16pt x 433.62p
+t>
+File: fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf Graphic file (type pdf)
+
+ <use fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf>
+Package pdftex.def Info: fig/cos_zen_prob_dens_sg2p3_IC86_BDT_norm0p05.pdf used
+ on input line 86.
+(pdftex.def)             Requested size: 230.46576pt x 172.84944pt.
+
+Overfull \hbox (102.43228pt too wide) in paragraph at lines 86--86
+[] [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf, id=2052, 867.24pt x 289.08pt>
-File: fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf Graphic file (type pdf)
-
-<use fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf>
-Package pdftex.def Info: fig/cos_zen_prob_dens_sg2p3_IC86_BDT.pdf used on input
- line 83.
-(pdftex.def)             Requested size: 435.3303pt x 145.11307pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf, id=2055, 433.62pt x 289.08pt>
+<fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf, id=1889, 433.62pt x 289.08pt>
 File: fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf Graphic file (type pdf)
 
 <use fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf>
 Package pdftex.def Info: fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf used on i
-nput line 113.
+nput line 130.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
-<fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf, id=2056, 433.62pt x 289.08pt>
+Overfull \hbox (128.03741pt too wide) in paragraph at lines 130--130
+[] [] 
+ []
+
+<fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf, id=1890, 433.62pt x 289.08pt>
 File: fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf Graphic file (type pdf)
 
 <use fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf>
 Package pdftex.def Info: fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf used on in
-put line 119.
+put line 135.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
+
+Overfull \hbox (128.03741pt too wide) in paragraph at lines 135--135
+[] [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] <fig/test_statistic.pdf, id=2073, 417.7206pt x 303.99748pt>
+[26] <fig/test_statistic.pdf, id=1907, 417.7206pt x 303.99748pt>
 File: fig/test_statistic.pdf Graphic file (type pdf)
 
 <use fig/test_statistic.pdf>
-Package pdftex.def Info: fig/test_statistic.pdf used on input line 173.
+Package pdftex.def Info: fig/test_statistic.pdf used on input line 192.
 (pdftex.def)             Requested size: 230.46576pt x 167.71864pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 173--173
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 192--192
 [] [] 
  []
 
-<fig/test_statistic_cumulative.pdf, id=2074, 433.62pt x 289.08pt>
+<fig/test_statistic_cumulative.pdf, id=1908, 433.62pt x 289.08pt>
 File: fig/test_statistic_cumulative.pdf Graphic file (type pdf)
 
 <use fig/test_statistic_cumulative.pdf>
 Package pdftex.def Info: fig/test_statistic_cumulative.pdf used on input line 1
-75.
+94.
 (pdftex.def)             Requested size: 230.46576pt x 153.64394pt.
 
-Overfull \hbox (115.2329pt too wide) in paragraph at lines 175--175
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 194--194
 [] [] 
  []
 
+[27 <./fig/cos_zen_prob_dens_bg_IC86_BDT_correct.pdf> <./fig/cos_zen_prob_dens_
+sg2p3_IC86_BDT_norm0p05.pdf
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/cos_zen_prob_dens_sg2p3_IC86_BDT_
+norm0p05.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./fig/ofu_teststat_zone00_IC86_BDT_bg_g2p3.pdf
 
-)) [30 <./fig/cos_zen_prob_dens_bg_IC86_BDT.pdf> <./fig/cos_zen_prob_dens_sg2p3
-_IC86_BDT.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/cos_zen_prob_dens_sg2p3_IC86_BDT.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [31pdfTeX warning (ext4): destination with the same identifier (name{subfigu
-re.17.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.65 ...s/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{subfigure.17.2}) has been already used, du
-plicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.65 ...s/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo}
-                                                   <./fig/ofu_teststat_zone00_I
-C86_BDT_bg_g2p3.pdf> <./fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ofu_teststat_zone00_IC86_BDT_bg_g
+2p3.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./fig/ofu_teststat_zone00_IC86_BDT_bg_cum.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/ofu_teststat_zone00_IC86_BDT_bg_c
 um.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
-> <./fig/test_statistic.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig/test_statistic.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
-> <./fig/test_statistic_cumulative.pdf
+>])) [28 <./fig/test_statistic.pdf> <./fig/test_statistic_cumulative.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/test_statistic_cumulative.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -1761,48 +1677,335 @@ DF inclusion: multiple pdfs with page group included in a single page
 \openout2 = `subfiles/Results/Results.aux'.
 
  (./subfiles/Results/Results.tex
-<fig/limits_wp_allgammas.pdf, id=2338, 417.7206pt x 318.1576pt>
+<fig/limits_wp_allgammas.pdf, id=2161, 417.7206pt x 318.1576pt>
 File: fig/limits_wp_allgammas.pdf Graphic file (type pdf)
 
 <use fig/limits_wp_allgammas.pdf>
-Package pdftex.def Info: fig/limits_wp_allgammas.pdf used on input line 28.
+Package pdftex.def Info: fig/limits_wp_allgammas.pdf used on input line 31.
 (pdftex.def)             Requested size: 384.11221pt x 292.55804pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32
+[29
 
 
- <./fig/limits_wp_allgammas.pdf>] [33]) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
- (./main.aux
-(./subfiles/Introduction/Introduction.aux) (./subfiles/OFU/OFU.aux)
-(./subfiles/scrambling/scrambling.aux) (./subfiles/GRB_models/GRB_models.aux)
+ <./fig/limits_wp_allgammas.pdf>]
+<fig/ngrb_redshift_dependence_swiftdoublet_ndetF.pdf, id=2244, 562.26057pt x 46
+4.81268pt>
+File: fig/ngrb_redshift_dependence_swiftdoublet_ndetF.pdf Graphic file (type pd
+f)
+ <use fig/ngrb_redshift_dependence_swiftdoublet_ndetF.pdf>
+Package pdftex.def Info: fig/ngrb_redshift_dependence_swiftdoublet_ndetF.pdf us
+ed on input line 77.
+(pdftex.def)             Requested size: 230.46576pt x 190.52478pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 77--77
+[] [] 
+ []
+
+
+<fig/ngrb_hc_redshift_dependence_swiftdoublet_ndetF.pdf, id=2245, 562.26057pt x
+ 464.81268pt>
+File: fig/ngrb_hc_redshift_dependence_swiftdoublet_ndetF.pdf Graphic file (type
+ pdf)
+ <use fig/ngrb_hc_redshift_dependence_swiftdoublet_ndetF.pdf>
+Package pdftex.def Info: fig/ngrb_hc_redshift_dependence_swiftdoublet_ndetF.pdf
+ used on input line 81.
+(pdftex.def)             Requested size: 230.46576pt x 190.52478pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 81--81
+[] [] 
+ []
+
+
+<fig/ngrb_lum_dependence_swiftdoublet_ndetF.pdf, id=2246, 562.26057pt x 458.389
+97pt>
+File: fig/ngrb_lum_dependence_swiftdoublet_ndetF.pdf Graphic file (type pdf)
+ <use fig/ngrb_lum_dependence_swiftdoublet_ndetF.pdf>
+Package pdftex.def Info: fig/ngrb_lum_dependence_swiftdoublet_ndetF.pdf used on
+ input line 84.
+(pdftex.def)             Requested size: 230.46576pt x 187.89214pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 84--84
+[] [] 
+ []
+
+
+<fig/ngrb_hc_lum_dependence_swiftdoublet_ndetF.pdf, id=2247, 562.26057pt x 468.
+57674pt>
+File: fig/ngrb_hc_lum_dependence_swiftdoublet_ndetF.pdf Graphic file (type pdf)
+
+ <use fig/ngrb_hc_lum_dependence_swiftdoublet_ndetF.pdf>
+Package pdftex.def Info: fig/ngrb_hc_lum_dependence_swiftdoublet_ndetF.pdf used
+ on input line 87.
+(pdftex.def)             Requested size: 230.46576pt x 192.06764pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 87--87
+[] [] 
+ []
+
+[30 <./fig/ngrb_redshift_dependence_swiftdoublet_ndetF.pdf> <./fig/ngrb_hc_reds
+hift_dependence_swiftdoublet_ndetF.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_redshift_dependence_swift
+doublet_ndetF.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./fig/ngrb_lum_dependence_swiftdoublet_ndetF.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_lum_dependence_swiftdoublet_
+ndetF.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/ngrb_hc_lum_dependence_swiftdoublet_ndetF.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_lum_dependence_swiftdoubl
+et_ndetF.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<fig/ngrb_redshift_dependence_swiftdoublet_cum.pdf, id=2494, 677.89258pt x 460.
+05739pt>
+File: fig/ngrb_redshift_dependence_swiftdoublet_cum.pdf Graphic file (type pdf)
+
+ <use fig/ngrb_redshift_dependence_swiftdoublet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_redshift_dependence_swiftdoublet_cum.pdf used
+ on input line 116.
+(pdftex.def)             Requested size: 230.46576pt x 156.4034pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 116--116
+[] [] 
+ []
+
+
+<fig/ngrb_hc_redshift_dependence_swiftdoublet_cum.pdf, id=2495, 677.89258pt x 4
+60.02908pt>
+File: fig/ngrb_hc_redshift_dependence_swiftdoublet_cum.pdf Graphic file (type p
+df)
+ <use fig/ngrb_hc_redshift_dependence_swiftdoublet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_hc_redshift_dependence_swiftdoublet_cum.pdf u
+sed on input line 120.
+(pdftex.def)             Requested size: 230.46576pt x 156.39377pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 120--120
+[] [] 
+ []
+
+
+<fig/ngrb_lum_dependence_swiftdoublet_cum.pdf, id=2496, 677.89258pt x 463.82146
+pt>
+File: fig/ngrb_lum_dependence_swiftdoublet_cum.pdf Graphic file (type pdf)
+ <use fig/ngrb_lum_dependence_swiftdoublet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_lum_dependence_swiftdoublet_cum.pdf used on i
+nput line 123.
+(pdftex.def)             Requested size: 230.46576pt x 157.68304pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 123--123
+[] [] 
+ []
+
+
+<fig/ngrb_hc_lum_dependence_swiftdoublet_cum.pdf, id=2497, 677.89258pt x 463.79
+315pt>
+File: fig/ngrb_hc_lum_dependence_swiftdoublet_cum.pdf Graphic file (type pdf)
+ <use fig/ngrb_hc_lum_dependence_swiftdoublet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_hc_lum_dependence_swiftdoublet_cum.pdf used o
+n input line 126.
+(pdftex.def)             Requested size: 230.46576pt x 157.67342pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 126--126
+[] [] 
+ []
+
+
+<fig/ngrb_lum_dependence_multiplet_cum.pdf, id=2502, 677.89258pt x 463.42232pt>
+File: fig/ngrb_lum_dependence_multiplet_cum.pdf Graphic file (type pdf)
+<use fig/ngrb_lum_dependence_multiplet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_lum_dependence_multiplet_cum.pdf used on inpu
+t line 167.
+(pdftex.def)             Requested size: 230.46576pt x 157.54735pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 167--167
+[] [] 
+ []
+
+
+<fig/ngrb_hc_lum_dependence_multiplet_cum.pdf, id=2503, 677.89258pt x 463.4183p
+t>
+File: fig/ngrb_hc_lum_dependence_multiplet_cum.pdf Graphic file (type pdf)
+ <use fig/ngrb_hc_lum_dependence_multiplet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_hc_lum_dependence_multiplet_cum.pdf used on i
+nput line 170.
+(pdftex.def)             Requested size: 230.46576pt x 157.54599pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 170--170
+[] [] 
+ []
+
+
+<fig/ngrb_redshift_dependence_multiplet_cum.pdf, id=2504, 677.89258pt x 459.658
+26pt>
+File: fig/ngrb_redshift_dependence_multiplet_cum.pdf Graphic file (type pdf)
+ <use fig/ngrb_redshift_dependence_multiplet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_redshift_dependence_multiplet_cum.pdf used on
+ input line 173.
+(pdftex.def)             Requested size: 230.46576pt x 156.2677pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 173--173
+[] [] 
+ []
+
+
+<fig/ngrb_hc_redshift_dependence_multiplet_cum.pdf, id=2505, 677.89258pt x 459.
+65425pt>
+File: fig/ngrb_hc_redshift_dependence_multiplet_cum.pdf Graphic file (type pdf)
+
+ <use fig/ngrb_hc_redshift_dependence_multiplet_cum.pdf>
+Package pdftex.def Info: fig/ngrb_hc_redshift_dependence_multiplet_cum.pdf used
+ on input line 176.
+(pdftex.def)             Requested size: 230.46576pt x 156.26634pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 176--176
+[] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31 <./fig/ngrb_redshift_dependence_swiftdoublet_cum.pdf> <./fig/ngrb_hc_redshi
+ft_dependence_swiftdoublet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_redshift_dependence_swift
+doublet_cum.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./fig/ngrb_lum_dependence_swiftdoublet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_lum_dependence_swiftdoublet_
+cum.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./fig/ngrb_hc_lum_dependence_swiftdoublet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_lum_dependence_swiftdoubl
+et_cum.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>] <fig/hfcws_g2p3_n0p0595.pdf, id=2792, 562.26057pt x 436.42317pt>
+File: fig/hfcws_g2p3_n0p0595.pdf Graphic file (type pdf)
+
+<use fig/hfcws_g2p3_n0p0595.pdf>
+Package pdftex.def Info: fig/hfcws_g2p3_n0p0595.pdf used on input line 211.
+(pdftex.def)             Requested size: 230.46576pt x 178.88803pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 211--211
+[] [] 
+ []
+
+<fig/hfcws_g2p3_hc2_n0p0759.pdf, id=2793, 562.26057pt x 436.42317pt>
+File: fig/hfcws_g2p3_hc2_n0p0759.pdf Graphic file (type pdf)
+
+<use fig/hfcws_g2p3_hc2_n0p0759.pdf>
+Package pdftex.def Info: fig/hfcws_g2p3_hc2_n0p0759.pdf used on input line 214.
+
+(pdftex.def)             Requested size: 230.46576pt x 178.88803pt.
+
+Overfull \hbox (115.2329pt too wide) in paragraph at lines 214--214
+[] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32 <./fig/ngrb_lum_dependence_multiplet_cum.pdf> <./fig/ngrb_hc_lum_dependence
+_multiplet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_lum_dependence_multiplet_
+cum.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./fig/ngrb_redshift_dependence_multiplet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_redshift_dependence_multiple
+t_cum.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/ngrb_hc_redshift_dependence_multiplet_cum.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/ngrb_hc_redshift_dependence_multi
+plet_cum.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>] <fig/limits_wphc_g2p3.pdf, id=3084, 417.7206pt x 295.18114pt>
+File: fig/limits_wphc_g2p3.pdf Graphic file (type pdf)
+
+<use fig/limits_wphc_g2p3.pdf>
+Package pdftex.def Info: fig/limits_wphc_g2p3.pdf used on input line 309.
+(pdftex.def)             Requested size: 384.11221pt x 271.4303pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 <./fig/hfcws_g2p3_n0p0595.pdf> <./fig/hfcws_g2p3_hc2_n0p0759.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig/hfcws_g2p3_hc2_n0p0759.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] [34 <./fig/limits_wphc_g2p3.pdf>]
+<fig/limits_wpsn_g2p7.pdf, id=3272, 417.7206pt x 295.18114pt>
+File: fig/limits_wpsn_g2p7.pdf Graphic file (type pdf)
+
+<use fig/limits_wpsn_g2p7.pdf>
+Package pdftex.def Info: fig/limits_wpsn_g2p7.pdf used on input line 425.
+(pdftex.def)             Requested size: 384.11221pt x 271.4303pt.
+
+<fig/limits_wp_g2p3_g2p0_Emin100e3.pdf, id=3274, 417.7206pt x 318.1576pt>
+File: fig/limits_wp_g2p3_g2p0_Emin100e3.pdf Graphic file (type pdf)
+
+<use fig/limits_wp_g2p3_g2p0_Emin100e3.pdf>
+Package pdftex.def Info: fig/limits_wp_g2p3_g2p0_Emin100e3.pdf used on input li
+ne 459.
+(pdftex.def)             Requested size: 384.11221pt x 292.55804pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [35 <./fig/limits_wpsn_g2p7.pdf>] [36 <./fig/limits_wp_g2p3_g2p0_Emin100e3.pd
+f>] (./main.bbl
+! Undefined control sequence.
+l.13 \newblock {\em \mnras
+                          }, 444:15--28, October 2014.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 \newblock {\em \mnras
+                          }, 406:1944--1958, August 2010.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+ [37
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ (./main.aux (./subfiles/Introduction/Introduction.aux)
+(./subfiles/OFU/OFU.aux) (./subfiles/scrambling/scrambling.aux)
+(./subfiles/GRB_models/GRB_models.aux)
 (./subfiles/GRB_Toy_Monte_Carlo/GRB_Toy_Monte_Carlo.aux)
 (./subfiles/Results/Results.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 990C70B1D3C111AF14DBF3923600E53D;2607
-(rerunfilecheck)             After:  61753A135485D18F8E196BA15A88A43F;2680.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D4293F2291C0C229E565FE3B048E685A;2685.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 19264 strings out of 495003
- 358065 string characters out of 6180448
- 482471 words of memory out of 5000000
- 21752 multiletter control sequences out of 15000+600000
- 60591 words of font info for 125 fonts, out of 8000000 for 9000
+ 19399 strings out of 495003
+ 363142 string characters out of 6180448
+ 485155 words of memory out of 5000000
+ 21852 multiletter control sequences out of 15000+600000
+ 61098 words of font info for 126 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,16n,56p,621b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,56p,698b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1813,9 +2016,9 @@ yr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (34 pages, 1146508 bytes).
+Output written on main.pdf (37 pages, 1570791 bytes).
 PDF statistics:
- 2510 PDF objects out of 2984 (max. 8388607)
- 201 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3527 PDF objects out of 3580 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
+ 535 words of extra memory for PDF output out of 10000 (max. 10000000)
 
